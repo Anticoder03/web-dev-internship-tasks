@@ -1,0 +1,94 @@
+ASSIGNMENT 03: STUDENT REGISTRATION FORM
+========================================
+
+
+
+IMPORTANT RULES
+---------------
+1. Use HTML only. Do not use CSS or JavaScript.
+2. Write the code yourself and be ready to explain each form element.
+3. Use a label for every form control.
+4. Use appropriate input types and meaningful names.
+5. Test the form in a browser before submitting.
+6. This is a frontend practice form. It does not need to save data to a server
+   or database.
+
+
+TASK REQUIREMENTS
+-----------------
+
+1. DOCUMENT STRUCTURE
+[ ] Create a valid HTML document with <!DOCTYPE html>, html, head, title,
+    and body elements.
+[ ] Set the page title to "Student Registration Form".
+[ ] Add a main heading and a short explanation of the form.
+
+2. PERSONAL INFORMATION
+[ ] Full name — text input, required.
+[ ] Email address — email input, required.
+[ ] Password — password input, required.
+[ ] Date of birth — date input.
+[ ] Phone number — suitable input and/or validation attributes.
+[ ] Address — textarea.
+
+3. COURSE INFORMATION
+[ ] Course selection — select dropdown with at least four options.
+[ ] Preferred study mode — radio buttons (for example, online or offline).
+[ ] Skills or interests — at least three checkboxes.
+[ ] Start date or preferred joining date — date input, if appropriate.
+
+4. TERMS AND SUBMISSION
+[ ] Terms and conditions — required checkbox.
+[ ] Submit button.
+[ ] Reset button.
+[ ] Use clear labels and helpful placeholder text where appropriate.
+[ ] Group related fields with fieldset and legend where useful.
+
+5. HTML VALIDATION
+[ ] Use required for fields that must be completed.
+[ ] Use appropriate input types, such as email, password, and date.
+[ ] Use minlength, maxlength, min, or max where appropriate.
+[ ] Do not use placeholder text as a replacement for labels.
+
+SUGGESTED FORM SECTIONS
+-----------------------
+A. Personal Information
+B. Course Selection
+C. Skills and Interests
+D. Terms and Conditions
+
+TESTING CHECKLIST
+-----------------
+[ ] Open registration.html in a browser.
+[ ] Try submitting the form with required fields empty.(and try adding screenshorts)
+[ ] Enter an invalid email address and test the browser's validation.
+[ ] Confirm the password field hides the typed characters.
+[ ] Select a course from the dropdown.
+[ ] Test radio buttons and checkboxes.
+[ ] Confirm the reset button clears the form.
+[ ] Confirm labels are connected to the correct inputs.
+[ ] Check spelling, indentation, and closing tags.
+
+IMPORTANT NOTE
+--------------
+HTML browser validation is only a basic client-side check. The form will not
+store or submit student details to a database unless a backend is added later.
+Do not use real passwords or sensitive personal information while testing.
+
+
+QUESTIONS TO PREPARE
+--------------
+1. What is the purpose of the form element?
+2. Why should a label be connected to an input?
+3. What is the difference between text and email input types?
+4. What does the required attribute do?
+5. What is the difference between radio buttons and checkboxes?
+6. What are select and option used for?
+7. What is the purpose of textarea?
+8. What is the difference between submit and reset buttons?
+9. What does the fieldset element do?
+10. Does HTML form validation securely validate data on a server?
+
+
+
+Good luck!

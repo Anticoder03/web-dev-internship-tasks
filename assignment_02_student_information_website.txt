@@ -1,0 +1,130 @@
+WEEK 1 — DAY 2
+ASSIGNMENT 02: STUDENT INFORMATION WEBSITE
+==========================================
+
+Difficulty: Beginner
+Estimated time: 60–90 minutes
+Technology: HTML only
+Submission deadline: As assigned by your mentor
+
+OBJECTIVE
+---------
+Build a simple three-page student information website. Practice semantic HTML,
+navigation between pages, relative file paths, and tables.
+
+IMPORTANT RULES
+---------------
+1. Use HTML only. Do not use CSS or JavaScript.
+2. Write the code yourself and be ready to explain it.
+3. Use semantic HTML elements where appropriate.
+4. Use relative links to navigate between pages in your project.
+5. Keep your files organized and use readable indentation.
+
+PROJECT STRUCTURE
+-----------------
+Create the following folder and files:
+
+week-01/
+└── day-02/
+    ├── index.html
+    ├── about.html
+    ├── timetable.html
+    └── assets/  (optional folder for images)
+
+WEBSITE PAGES
+-------------
+
+PAGE 1 — HOME (index.html)
+[ ] Add a valid HTML document structure.
+[ ] Set the page title to "Student Information Website".
+[ ] Add a header with the website or college name.
+[ ] Add a navigation menu linking to Home, About, and Timetable.
+[ ] Add a main section introducing the college or student community.
+[ ] Add a section listing at least three courses or departments.
+[ ] Add a footer with basic contact information.
+
+PAGE 2 — ABOUT (about.html)
+[ ] Add a valid HTML document structure.
+[ ] Add the same navigation menu so users can return to the other pages.
+[ ] Add a heading and a short history or introduction.
+[ ] Describe at least three facilities, departments, or student services.
+[ ] Use semantic elements such as header, nav, main, section, and footer.
+[ ] Add a working link back to the Home page.
+
+PAGE 3 — TIMETABLE (timetable.html)
+[ ] Add a valid HTML document structure.
+[ ] Add the same navigation menu.
+[ ] Create a weekly class timetable using an HTML table.
+[ ] Include at least five subjects.
+[ ] Include days and class timings.
+[ ] Use table headings (th) for row or column labels.
+[ ] Organize the table using thead and tbody where appropriate.
+[ ] Add a working link back to the Home page.
+
+NAVIGATION REQUIREMENTS
+-----------------------
+[ ] Every page must link to all three pages.
+[ ] Use relative paths, such as href="about.html".
+[ ] Check that links work when pages are opened in a browser.
+[ ] Use clear link text such as "Home", "About", and "Timetable".
+
+HTML CONCEPTS TO PRACTICE
+-------------------------
+- Semantic elements: header, nav, main, section, article, footer
+- Links: a and href
+- Relative file paths
+- Tables: table, thead, tbody, tr, th, td
+- Heading hierarchy
+- Meaningful page titles
+- Readable indentation
+
+TEST BEFORE SUBMISSION
+---------------------
+[ ] Open index.html in a browser.
+[ ] Navigate from Home to About and Timetable.
+[ ] Navigate back to Home from both secondary pages.
+[ ] Confirm all three pages load without errors.
+[ ] Check that the timetable has headings and readable information.
+[ ] Check that each page has a unique, appropriate title.
+[ ] Check spelling, indentation, and closing tags.
+
+SUBMISSION REQUIREMENTS
+-----------------------
+Submit:
+1. The complete day-02 folder containing all HTML files.
+2. Screenshots of all three pages.
+3. A short README.txt or README.md explaining how to open the website.
+4. Your GitHub repository link, if requested by your mentor.
+
+VIVA QUESTIONS
+--------------
+Be prepared to answer:
+1. What is semantic HTML?
+2. What is the purpose of the nav element?
+3. What is the difference between an absolute URL and a relative URL?
+4. Why should navigation be available on every page?
+5. What are table, tr, th, and td used for?
+6. What is the purpose of thead and tbody?
+7. What is the difference between th and td?
+8. Why should each page have an appropriate title?
+9. What does the footer element usually contain?
+10. How would you debug a link that does not work?
+
+EVALUATION (100 MARKS)
+----------------------
+HTML structure and semantic elements .......... 20 marks
+Navigation and relative links ................. 20 marks
+Timetable structure and content ............... 20 marks
+Page content and organization ................. 15 marks
+Code readability and consistency ............. 10 marks
+Testing, screenshots, and submission .......... 10 marks
+Viva explanation ..............................  5 marks
+TOTAL ......................................... 100 marks
+
+COMPLETION GOAL
+---------------
+By the end of this assignment, you should be able to organize a small
+multi-page website, connect pages with relative links, and display structured
+information using an HTML table.
+
+Good luck!
