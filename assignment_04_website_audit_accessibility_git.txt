@@ -1,0 +1,122 @@
+ASSIGNMENT 04: WEBSITE AUDIT, ACCESSIBILITY & GIT
+================================================
+
+
+IMPORTANT RULES
+---------------
+1. Use HTML only. Do not add CSS or JavaScript today.
+2. Work with your own Day 2 Student Information Website or a website supplied
+   by your mentor.
+3. Identify the cause of each problem and fix it instead of hiding it.
+4. Make small, meaningful Git commits.
+5. Be ready to explain the changes you made.
+
+PROJECT STRUCTURE
+-----------------
+Use your existing Day 2 project
+
+PART A — WEBSITE AUDIT
+----------------------
+Review all pages and record the problems you find.
+
+[ ] 1. Check that every page has <!DOCTYPE html>, html, head, title, and body.
+[ ] 2. Give each page a meaningful and unique title.
+[ ] 3. Check that headings follow a logical order.
+[ ] 4. Use semantic elements where appropriate: header, nav, main, section,
+       article, and footer.
+[ ] 5. Check every navigation link and relative file path.
+[ ] 6. Find and fix broken image paths.
+[ ] 7. Add meaningful alt text to informative images.
+[ ] 8. Use alt="" for purely decorative images.
+[ ] 9. Check that tables use headings appropriately.
+[ ] 10. Check that each form control has a connected label, if applicable.
+[ ] 11. Fix missing closing tags, spelling errors, and poor indentation.
+[ ] 12. Remove duplicate or unnecessary content.
+
+PART B — DEBUGGING PRACTICE
+---------------------------
+[ ] 1. Click every navigation link and confirm it opens the correct page.
+[ ] 2. If a link fails, inspect its href and check the filename/path.
+[ ] 3. If an image fails, inspect its src and check the actual file path.
+[ ] 4. Open browser developer tools and inspect the Console for errors.
+[ ] 5. Use page source or developer tools to inspect the HTML.
+[ ] 6. Record at least three problems and explain how you fixed them.
+
+Do not intentionally leave broken links or images in your final submission.
+
+PART C — ACCESSIBILITY BASICS
+-----------------------------
+[ ] 1. Use meaningful link text instead of vague text such as "click here"
+       when a clearer label is possible.
+[ ] 2. Add suitable alt text to informative images.
+[ ] 3. Make sure heading levels represent the content hierarchy.
+[ ] 4. Ensure form labels identify their corresponding controls.
+[ ] 5. Use table header cells (th) for table headings.
+[ ] 6. Use semantic elements instead of using div for every section.
+[ ] 7. Ensure links and controls have understandable names.
+
+PART D — GIT AND GITHUB
+-----------------------
+If Git is installed, open a terminal in your project folder.
+
+1. Check the current project status:
+   git status
+
+2. Initialize a repository if one does not already exist:
+   git init
+
+3. Add project files:
+   git add .
+
+4. Create an initial commit if the repository has no commit yet:
+   git commit -m "Add student information website"
+
+5. After fixing the website, inspect the changes:
+   git status
+   git diff
+
+6. Stage and commit your fixes:
+   git add .
+   git commit -m "Fix HTML structure and accessibility"
+
+7. If your mentor has provided a GitHub repository, connect and push using
+   the repository URL and instructions provided by your mentor. Do not replace
+   an existing remote without checking it first.
+
+If GitHub setup is not available, complete the local Git steps and submit the
+project folder. Never upload passwords, API keys, or other secrets.
+
+PART E — README DOCUMENTATION
+-----------------------------
+Create a README.md file containing:
+[ ] Project name
+[ ] Short description
+[ ] List of pages
+[ ] Technologies used
+[ ] Instructions for opening index.html in a browser
+[ ] Summary of the fixes made during the audit
+
+TEST BEFORE SUBMISSION
+----------------------
+[ ] Open index.html and visit every page.
+[ ] Confirm all navigation links work.
+[ ] Confirm images load correctly.
+[ ] Confirm each page has a meaningful title.
+[ ] Check heading hierarchy and image alt text.
+[ ] Check tables and form labels, if present.
+[ ] Review the browser Console for relevant errors.
+[ ] Run git status and ensure the correct files are committed.
+[ ] Confirm README.md is included.
+
+SUBMISSION REQUIREMENTS
+-----------------------
+Submit:
+1. The complete project folder.
+2. Screenshots of all pages after the fixes.
+3. README.md.
+4. A short audit report listing at least three problems and their fixes.
+5. Your GitHub repository URL, if available.
+6. Your latest Git commit message.
+
+
+SUBMIT THE GITHUB LINK AS WELL. 
