@@ -1,0 +1,112 @@
+FINAL MINI-PROJECT: COLLEGE STUDENT PORTAL 
+=========================================================
+
+
+RULES
+-----
+1. Use HTML only. Do not use CSS, JavaScript, Bootstrap, or other frameworks.
+2. Write the project yourself. You may refer to your notes and earlier tasks.
+3. All pages must be connected through working navigation links.
+4. Use fictional information only. Do not collect real sensitive data.
+5. Be ready to explain your code during the final review.
+
+PROJECT STRUCTURE
+-----------------
+week-01/
+└── day-05/
+    ├── index.html
+    ├── about.html
+    ├── timetable.html
+    ├── registration.html
+    ├── README.md
+    └── assets/
+        └── images/  (optional images)
+
+PAGE 1 — HOME (index.html)
+--------------------------
+[ ] Valid HTML document structure and meaningful page title.
+[ ] Header with a fictional college name.
+[ ] Navigation menu linking to all four pages.
+[ ] Main heading and welcome message.
+[ ] Short introduction to the college.
+[ ] At least three courses or departments.
+[ ] Announcements or news section.
+[ ] At least one relevant image with suitable alt text, if using images.
+[ ] Footer with fictional contact details.
+
+PAGE 2 — ABOUT (about.html)
+---------------------------
+[ ] Shared navigation menu.
+[ ] Fictional college history or mission.
+[ ] At least three facilities or student services.
+[ ] Logical headings and paragraphs.
+[ ] Appropriate semantic elements such as header, nav, main, section, footer.
+
+PAGE 3 — TIMETABLE (timetable.html)
+----------------------------------
+[ ] Shared navigation menu.
+[ ] Weekly timetable using an HTML table.
+[ ] At least five subjects.
+[ ] At least five weekdays and suitable class times.
+[ ] Use th for table headings and thead/tbody where appropriate.
+[ ] Keep the timetable organized and understandable.
+
+PAGE 4 — REGISTRATION (registration.html)
+-----------------------------------------
+[ ] Shared navigation menu.
+[ ] Full name (required text input).
+[ ] Email (required email input).
+[ ] Password (password input).
+[ ] Date of birth (date input).
+[ ] Course dropdown with at least three courses.
+[ ] Preferred study mode using radio buttons.
+[ ] At least three interests using checkboxes.
+[ ] Address using textarea.
+[ ] Required terms-and-conditions checkbox.
+[ ] Submit and reset buttons.
+[ ] Connect every form control to a suitable label.
+[ ] Use appropriate input types and basic HTML validation.
+[ ] Group related fields with fieldset and legend where useful.
+
+Note: This is an HTML prototype. The form does not need to save data to a
+database or send real registrations. Use fictitious details when testing.
+
+GLOBAL REQUIREMENTS
+-------------------
+[ ] All four pages link to one another through navigation.
+[ ] Each page has a unique, meaningful title.
+[ ] Use semantic HTML elements appropriately.
+[ ] Use logical heading levels and meaningful link text.
+[ ] Add suitable alt text to informative images.
+[ ] Use readable indentation and consistent formatting.
+[ ] Use relative paths for local pages and images.
+[ ] Do not leave broken links or missing images.
+[ ] Use HTML only; no styling or scripting yet.
+
+
+TESTING CHECKLIST
+-----------------
+[ ] Open index.html in a browser.
+[ ] Visit every page through the navigation menu.
+[ ] Return to Home from each page.
+[ ] Check all local links and images.
+[ ] Confirm each page has a suitable title.
+[ ] Check timetable headings and content.
+[ ] Test required form fields and invalid email input.
+[ ] Test the reset button.
+[ ] Confirm every form control has a label.
+[ ] Check indentation and closing tags.
+[ ] Confirm README.md is included.
+[ ] Take screenshots of all four pages.
+
+SUBMISSION REQUIREMENTS
+-----------------------
+1. Complete day-05 project folder.
+2. Screenshots of all four pages.
+3. README.md.
+4. GitHub repository link, if requested by your mentor.
+5. A 3–5 minute demonstration explaining the website.
+6. Be prepared for the viva questions below.
+7. Submit the GitHub link as well.
+
+Good luck!
