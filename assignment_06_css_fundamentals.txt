@@ -1,0 +1,97 @@
+ASSIGNMENT 06: CSS FUNDAMENTALS & STYLING A WEBPAGE
+===================================================
+
+
+
+RULES
+-----
+1. Use HTML and CSS only. Do not use JavaScript or CSS frameworks.
+2. Continue from the College Student Portal created for Day 5, or create a
+   simple personal profile page if that project is not ready.
+3. Prefer an external stylesheet for the main styling.
+4. Write readable, consistently formatted code.
+5. Do not copy a complete website template.
+6. Be ready to explain the CSS rules you wrote.
+
+
+
+You may use your Day 5 project instead. If you do, link the stylesheet from
+the relevant HTML pages and keep file paths correct.
+
+PART A — CSS FUNDAMENTALS
+-------------------------
+Study these topics and write a short note explaining each one.
+
+[ ] 1. What CSS is and why websites use it.
+[ ] 2. Inline CSS, internal CSS, and external CSS.
+[ ] 3. CSS rule syntax: selector, property, and value.
+[ ] 4. Element selectors, class selectors, and ID selectors.
+[ ] 5. Text color and background-color.
+[ ] 6. Font family, font size, and font weight.
+[ ] 7. Text alignment and line height.
+[ ] 8. Margin, padding, border, and border radius.
+[ ] 9. The CSS box model.
+[ ] 10. How to connect an external stylesheet using a link element.
+
+PART B — STYLE A PROFILE PAGE
+-----------------------------
+Create or select a personal profile page and apply these styles.
+
+[ ] Link an external file named style.css.
+[ ] Set a readable font family for the page.
+[ ] Set a background color for the page.
+[ ] Style the main heading with a distinct color and suitable font size.
+[ ] Style paragraphs with readable text size and line height.
+[ ] Style at least two sections or content groups.
+[ ] Use margin and padding to create space around content.
+[ ] Add borders and rounded corners to at least one content section.
+[ ] Style links so they are easy to identify.
+[ ] Use classes to apply a shared style to multiple elements.
+[ ] Use an ID selector at least once for a unique element.
+[ ] Keep the page readable and avoid excessive colors or decoration.
+
+PART C — CSS SELECTOR EXERCISE
+------------------------------
+Create a small test section in your page or a separate practice page.
+
+[ ] Use an element selector, such as p.
+[ ] Use a class selector, such as .card.
+[ ] Use an ID selector, such as #main-title.
+[ ] Apply different text colors to at least three elements.
+[ ] Apply different spacing values to two sections.
+[ ] Add a border to one element.
+[ ] Inspect the result in the browser.
+
+PART D — BOX MODEL EXPERIMENT
+-----------------------------
+Create three content boxes and experiment with their spacing.
+
+[ ] Give each box a width or max-width.
+[ ] Apply padding inside each box.
+[ ] Apply margin outside each box.
+[ ] Add a border.
+[ ] Change one box's padding and observe the difference.
+[ ] Write two or three sentences explaining the difference between margin
+    and padding.
+
+DESIGN REQUIREMENTS
+-------------------
+- Use a consistent palette with no more than four main colors.
+- Ensure text is readable against its background.
+- Keep spacing consistent.
+- Use meaningful class names such as .profile-card or .section-title.
+- Avoid unnecessary inline styles.
+- Do not use Bootstrap, Tailwind, or another CSS framework.
+
+
+SUBMISSION REQUIREMENTS
+-----------------------
+Submit:
+1. The HTML file or updated Day 5 project.
+2. The external style.css file.
+3. A screenshot of the styled webpage.
+4. A short note explaining inline, internal, and external CSS.
+5. A short explanation of margin vs padding.
+6. Your GitHub repository link.
+
+Good luck!
