@@ -1,0 +1,87 @@
+ASSIGNMENT 07: CSS BOX MODEL, FLEXBOX & PAGE LAYOUTS
+
+
+RULES
+-----
+1. Use HTML and CSS only. Do not use JavaScript or CSS frameworks.
+2. Continue using the Day 5 College Student Portal or the Day 6 profile page.
+3. Put your CSS in an external stylesheet named style.css.
+4. Do not copy a complete website template.
+5. Test your layout at different browser widths.
+6. Be ready to explain your CSS properties and layout choices.
+
+
+
+PART A — BOX MODEL PRACTICE
+---------------------------
+Create three content cards or boxes.
+
+[ ] Give each box a width or max-width.
+[ ] Add padding inside each box.
+[ ] Add margin outside each box.
+[ ] Add a border and border-radius.
+[ ] Use box-sizing: border-box and observe how sizing behaves.
+[ ] Make the boxes visually consistent.
+[ ] Write a short note explaining content, padding, border, and margin.
+
+PART B — BUILD A FLEXBOX NAVIGATION BAR
+---------------------------------------
+Create a navigation bar containing:
+- Website or college name on the left.
+- At least four navigation links on the right.
+- Clear spacing between links.
+
+Requirements:
+[ ] Use display: flex.
+[ ] Use justify-content to position items.
+[ ] Use align-items to align items vertically.
+[ ] Use gap to create spacing between links.
+[ ] Remove list bullets if using a list for navigation.
+[ ] Use meaningful link text.
+[ ] Keep the navigation usable at narrower widths.
+
+PART C — CREATE A CARD LAYOUT
+-----------------------------
+Build a section containing at least four cards, for example:
+- Computer Science
+- Information Technology
+- Data Science
+- Web Development
+
+Each card should contain a heading, a short description, and a link or label.
+
+Requirements:
+[ ] Use Flexbox to arrange cards in a row on wider screens.
+[ ] Use gap for consistent spacing.
+[ ] Use flex-wrap: wrap so cards can move to another line when needed.
+[ ] Use a sensible width or flex-basis for each card.
+[ ] Apply padding, margin, border, and border-radius.
+[ ] Use consistent typography and colors.
+[ ] Keep the layout readable without horizontal scrolling.
+
+PART D — PRACTICE FLEXBOX ALIGNMENT
+-----------------------------------
+Create a separate section with three items and experiment with:
+[ ] justify-content: flex-start
+[ ] justify-content: center
+[ ] justify-content: space-between
+[ ] align-items: center
+[ ] flex-direction: row and column
+[ ] gap
+[ ] flex-wrap: wrap
+
+You do not need to use every value in the final design. The goal is to observe
+how each property changes the layout and understand when to use it.
+
+PART E — BASIC RESPONSIVE CHECK
+------------------------------
+[ ] Test at desktop width.
+[ ] Test at tablet width.
+[ ] Test at narrow mobile width.
+[ ] Use a media query if needed to adjust navigation or cards.
+[ ] Ensure content does not overlap or become unreadable.
+[ ] Ensure there is no unwanted horizontal scrolling.
+
+Focus on a usable layout rather than a perfect mobile design.
+
+Good luck!
