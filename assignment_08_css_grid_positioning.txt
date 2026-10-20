@@ -1,0 +1,108 @@
+CSS GRID, POSITIONING & PAGE LAYOUTS
+==================================================
+
+RULES
+-----
+1. Use HTML and CSS only. Do not use JavaScript or CSS frameworks.
+2. Continue with your College Student Portal or another practice page.
+3. Keep styles in an external stylesheet named style.css.
+4. Do not copy a complete website template.
+5. Test the page at desktop, tablet, and mobile widths.
+6. Be ready to explain your CSS properties and layout choices.
+
+SUGGESTED PROJECT STRUCTURE
+---------------------------
+week-02/
+└── day-08/
+    ├── index.html
+    ├── notes.txt
+    └── css/
+        └── style.css
+
+If continuing an existing project, keep its current structure and update the
+appropriate HTML and CSS files.
+
+PART A — CSS GRID FUNDAMENTALS
+------------------------------
+Create a section containing at least six cards in a grid.
+
+[ ] Use display: grid on the parent container.
+[ ] Use grid-template-columns to define columns.
+[ ] Use gap for consistent row and column spacing.
+[ ] Give each card a heading and short description.
+[ ] Try grid-template-columns: repeat(3, 1fr) on a wide screen.
+[ ] Use a media query to reduce columns on smaller screens.
+[ ] Keep cards aligned and readable.
+[ ] Compare the grid layout with your Flexbox card layout from Day 7.
+
+PART B — CSS POSITIONING
+------------------------
+Create a demonstration section showing these positioning types.
+
+[ ] static — observe normal document flow.
+[ ] relative — move an element slightly from its normal position.
+[ ] absolute — position a small label inside a parent with position: relative.
+[ ] fixed — create a small help or contact link near a viewport corner.
+[ ] sticky — create a heading or navigation element that sticks while scrolling,
+    if appropriate for your page.
+
+IMPORTANT:
+- Positioning should not cover important text or navigation.
+- Keep fixed and sticky elements small and usable.
+- A positioned element often needs a suitable containing parent.
+- Test by scrolling and resizing the browser.
+
+PART C — BUILD A DASHBOARD-STYLE LAYOUT
+---------------------------------------
+Create a simple dashboard for a fictional college or training institute.
+
+Include:
+- Header: website name and a small profile or account label.
+- Sidebar: at least four navigation links.
+- Main content: welcome heading and summary.
+- At least three statistics cards, such as Total Students, Courses, and Events.
+- Recent announcements or upcoming events.
+- Footer.
+
+Requirements:
+[ ] Use CSS Grid for the main page structure or dashboard card area.
+[ ] Use Flexbox for at least one smaller component, such as the header.
+[ ] Use consistent spacing, colors, typography, and borders.
+[ ] Use semantic HTML elements where appropriate.
+[ ] Use meaningful navigation link text.
+[ ] Keep the information readable.
+
+PART D — RESPONSIVE LAYOUT
+--------------------------
+[ ] Test at a wide desktop width.
+[ ] Test at a tablet width.
+[ ] Test at a narrow mobile width.
+[ ] Use media queries to adjust grid columns.
+[ ] Make the sidebar stack, move, or become a normal navigation section on mobile.
+[ ] Ensure cards do not become too narrow.
+[ ] Prevent unwanted horizontal scrolling.
+[ ] Ensure fixed or sticky elements do not hide important content.
+
+PART E — CONCEPT NOTES
+----------------------
+Write short answers in notes.txt:
+
+1. What is CSS Grid?
+2. What is the difference between Grid and Flexbox?
+3. What do grid-template-columns and gap do?
+4. What is the difference between relative and absolute positioning?
+5. What is the difference between fixed and sticky positioning?
+6. What is a media query?
+7. Give one example of when Grid is useful and one when Flexbox is useful.
+
+SUBMISSION REQUIREMENTS
+-----------------------
+Submit:
+1. Updated HTML file or complete project folder.
+2. Updated style.css.
+3. notes.txt with the concept answers.
+4. A desktop screenshot and a mobile-width screenshot.
+5. Your GitHub repository link, if requested by your mentor.
+
+
+Good luck!
