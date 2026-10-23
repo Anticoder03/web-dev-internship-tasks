@@ -1,0 +1,90 @@
+Topic: Responsive Web Design, Media Queries & Mobile-First Development
+
+
+============================================================
+2. TASK REQUIREMENTS
+============================================================
+
+A. HTML Structure 
+[ ] Create index.html.
+[ ] Add a header with the website name/logo and navigation links.
+[ ] Add a welcome section with a heading and short description.
+[ ] Create at least 3 dashboard cards, such as Courses, Assignments, and Progress.
+[ ] Add a recent-activity or announcements section.
+[ ] Add a footer.
+[ ] Use semantic HTML elements where appropriate.
+
+B. Base CSS & Visual Design
+[ ] Create a separate style.css file and link it correctly.
+[ ] Choose a consistent color palette and readable fonts.
+[ ] Add spacing, borders, and subtle shadows where appropriate.
+[ ] Use CSS Flexbox or Grid for the layout.
+[ ] Ensure headings, paragraphs, and cards are visually organized.
+
+C. Responsive Layout 
+[ ] Start with a layout that works well on a small mobile screen.
+[ ] Make dashboard cards stack vertically on narrow screens.
+[ ] Use a multi-column layout on wider screens.
+[ ] Ensure navigation links fit on mobile; they may wrap or change layout.
+[ ] Make images and other content scale within their containers.
+[ ] Use flexible widths, percentages, max-width, or responsive grid units instead of fixed widths everywhere.
+[ ] Prevent horizontal scrolling at all required viewport sizes.
+
+D. CSS Media Queries
+Add and test media queries for at least these viewport ranges:
+[ ] Mobile: up to 600px.
+[ ] Tablet: 601px–900px.
+[ ] Desktop: wider than 900px (the default layout may handle this).
+[ ] Change the card grid or layout at different widths.
+[ ] Adjust spacing and typography where needed.
+[ ] Include at least two meaningful responsive changes beyond simply changing text size.
+
+Example:
+@media (max-width: 600px) {
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+E. Testing & Accessibility 
+[ ] Test at approximately 375px wide (mobile).
+[ ] Test at approximately 768px wide (tablet).
+[ ] Test at approximately 1280px wide (desktop).
+[ ] Use browser developer tools to simulate different screen sizes.
+[ ] Keep text readable and contrast sufficient.
+[ ] Ensure links have clear labels and usable tap targets.
+[ ] Add descriptive alt text to meaningful images.
+[ ] Check that content does not overlap or become cut off.
+
+F. Code Quality 
+[ ] Use clear class names and consistent indentation.
+[ ] Keep HTML and CSS in separate files.
+[ ] Add comments for important responsive sections.
+[ ] Remove unused CSS and fix broken links.
+[ ] Include a short README.txt explaining the project and how to run it.
+
+============================================================
+3. REQUIRED FILE STRUCTURE
+============================================================
+
+day09-responsive-student-dashboard/
+|-- index.html
+|-- style.css
+|-- README.txt
+|-- images/ (optional)
+
+README.txt must include:
+- Project title
+- Features implemented
+- Viewport sizes tested
+- How to open/run the project
+
+============================================================
+4. RULES
+============================================================
+
+1. Use only HTML and CSS. Do not use JavaScript, Bootstrap, Tailwind, or other frameworks.
+2. You may use simple CSS shapes or a small number of suitable images.
+3. Do not copy a complete ready-made template.
+4. Use media queries to make genuine layout changes.
+5. The page must be usable on a small mobile screen as well as a desktop.
