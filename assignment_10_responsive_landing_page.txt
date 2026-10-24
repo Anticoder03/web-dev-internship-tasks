@@ -1,0 +1,129 @@
+ RESPONSIVE LANDING PAGE & CSS POLISH
+===================================================
+
+RULES
+-----
+1. Use HTML and CSS only. No JavaScript or CSS frameworks.
+2. Use an external stylesheet named style.css.
+3. Do not copy a complete website template.
+4. Use your own images or royalty-free images, with attribution where required.
+5. Make the page usable on mobile, tablet, and desktop.
+6. Be ready to explain your layout and responsive decisions.
+
+PROJECT CHOICE
+--------------
+Choose ONE fictional business:
+- Coding academy
+- Student career guidance service
+- Coffee shop
+- Fitness studio
+- Technology startup
+
+SUGGESTED FILE STRUCTURE
+------------------------
+week-02/
+└── day-10/
+    ├── index.html
+    ├── README.md
+    ├── css/
+    │   └── style.css
+    └── assets/
+        └── images/
+
+PAGE REQUIREMENTS
+-----------------
+
+1. HEADER AND NAVIGATION
+[ ] Add a brand or business name.
+[ ] Include at least four navigation links.
+[ ] Use Flexbox to arrange the header content.
+[ ] Ensure navigation fits narrow screens without overlapping.
+[ ] Use simple wrapping or stacked navigation; do not create a non-working
+    hamburger menu.
+
+2. HERO SECTION
+[ ] Add a clear headline explaining the business or service.
+[ ] Add a short supporting paragraph.
+[ ] Add a primary call-to-action link or button.
+[ ] Add a secondary link or action if useful.
+[ ] Include a relevant image or illustration if available.
+[ ] Make the hero section visually distinct and easy to understand.
+
+3. FEATURES OR SERVICES
+[ ] Include at least three feature/service cards.
+[ ] Each card must have a heading and short description.
+[ ] Use CSS Grid or Flexbox for the card layout.
+[ ] Keep spacing, borders, and typography consistent.
+
+4. ABOUT OR BENEFITS SECTION
+[ ] Explain what makes the business or service useful.
+[ ] Include at least three concise benefits or facts.
+[ ] Use a clear heading and readable paragraphs.
+
+5. TESTIMONIALS OR HIGHLIGHTS
+[ ] Add two fictional testimonials or two key highlights.
+[ ] Clearly label fictional testimonials as sample content.
+[ ] Keep content concise and readable.
+
+6. CALL TO ACTION AND FOOTER
+[ ] Add a final call-to-action section.
+[ ] Add a footer with contact details or fictional social links.
+[ ] Ensure footer links have meaningful text.
+[ ] Use semantic HTML elements where appropriate.
+
+RESPONSIVE DESIGN REQUIREMENTS
+------------------------------
+Use a mobile-first approach: start with narrow-screen styles and add media
+queries for wider layouts.
+
+[ ] Use readable base font sizes and comfortable line height.
+[ ] Use flexible widths and max-width where appropriate.
+[ ] Use CSS Grid or Flexbox for the main layouts.
+[ ] Add at least two media-query breakpoints suited to your design.
+[ ] Stack hero content and feature cards on mobile where needed.
+[ ] Use an appropriate compact or two-column layout on tablets.
+[ ] Use a balanced multi-column layout on desktop where suitable.
+[ ] Prevent horizontal scrolling.
+[ ] Ensure images scale within their containers.
+[ ] Ensure buttons and links are easy to tap.
+[ ] Maintain readable text contrast and visible link states.
+[ ] Avoid fixed widths that force content off-screen.
+
+DESIGN QUALITY CHECKLIST
+------------------------
+[ ] Use a consistent palette with no more than four main colors.
+[ ] Use a consistent spacing scale.
+[ ] Use no more than two font families unless there is a clear reason.
+[ ] Keep headings, paragraphs, and cards visually consistent.
+[ ] Add hover styles for links or buttons where appropriate.
+[ ] Avoid excessive shadows, borders, animations, and decoration.
+[ ] Use meaningful class names and readable CSS.
+[ ] Keep CSS in the external stylesheet.
+
+TESTING CHECKLIST
+-----------------
+Test at these approximate viewport widths:
+[ ] Mobile: 375 px
+[ ] Tablet: 768 px
+[ ] Desktop: 1366 px
+
+Also verify:
+[ ] Navigation links work or lead to valid section anchors.
+[ ] The call-to-action leads to a valid section or destination.
+[ ] Images load and have suitable alt text.
+[ ] Text does not overflow cards or containers.
+[ ] Navigation does not overlap the brand name.
+[ ] Cards rearrange cleanly at smaller widths.
+[ ] There is no unwanted horizontal scrolling.
+[ ] Browser developer tools show no relevant CSS loading errors.
+
+SUBMISSION REQUIREMENTS
+-----------------------
+Submit:
+1. index.html.
+2. css/style.css.
+3. Any image assets used, with attribution if required.
+4. README.md with project description, features, and instructions.
+5. Screenshots at mobile, tablet, and desktop widths.
+6. GitHub repository URL, if requested by your mentor.
+7. A short demonstration explaining the responsive layout.
