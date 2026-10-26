@@ -1,0 +1,132 @@
+WEB DEVELOPMENT TRAINING — DAY 11 ASSIGNMENT
+Topic: CSS Transitions, Transforms, Hover Effects & Interactive UI Polish
+
+Duration: 2 hours | Level: Beginner | Technologies: HTML5 and CSS3 only
+Total Marks: 100
+
+1. OBJECTIVE
+Build a polished, responsive Product Showcase webpage for a fictional product or service. Use CSS transitions, transforms, hover states, and focus states to make it feel interactive without JavaScript.
+
+Choose one theme: headphones/smartwatch, coffee shop product, coding course, travel package, or productivity app.
+
+2. TASK REQUIREMENTS
+
+A. HTML Structure — 15 marks
+[ ] Create index.html.
+[ ] Add a header with a logo or brand name.
+[ ] Add a navigation menu with at least 3 links.
+[ ] Create a hero section with a heading, description, and call-to-action.
+[ ] Add at least 3 product/service cards. Each needs a title, description, price/key detail, and action link/button.
+[ ] Add a footer with copyright text and at least 2 useful links.
+[ ] Use semantic HTML elements where appropriate.
+
+B. CSS Styling & Layout — 20 marks
+[ ] Create a separate style.css and link it correctly.
+[ ] Use a consistent palette of 3–5 main colors.
+[ ] Use readable typography, spacing, borders, and shadows.
+[ ] Use Flexbox or CSS Grid for the main layout.
+[ ] Establish clear visual hierarchy and keep the page uncluttered.
+
+C. CSS Transitions — 15 marks
+Apply smooth transitions to at least 4 different elements:
+[ ] Buttons change color/background on hover.
+[ ] Product cards change shadow or border on hover.
+[ ] Navigation links change color on hover.
+[ ] Images/icons smoothly scale or change opacity.
+Use transition properties such as:
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+D. CSS Transforms — 15 marks
+Use at least 3 appropriate transform effects:
+[ ] A card lifts slightly with translateY().
+[ ] A product image gently scales with scale().
+[ ] An icon or decorative element rotates with rotate() if suitable.
+[ ] Keep effects subtle and avoid making text hard to read.
+Example:
+.product-card:hover {
+    transform: translateY(-6px);
+}
+
+E. Hover, Focus & Accessibility — 15 marks
+[ ] Add :hover styles to links and buttons.
+[ ] Add :focus-visible styles for keyboard users.
+[ ] Ensure text/background contrast is readable.
+[ ] Add descriptive alt text to meaningful images.
+[ ] Include a prefers-reduced-motion media query to reduce/disable nonessential motion.
+[ ] Do not hide essential information behind hover effects; keep controls usable on touchscreens.
+
+F. Responsive Design & Quality — 10 marks
+[ ] Test around desktop width (1280px), tablet width (768px), and mobile width (375px).
+[ ] Rearrange/stack cards on small screens.
+[ ] Prevent horizontal scrolling and overlapping content.
+[ ] Check all text, images, and buttons fit properly.
+
+G. Code Quality — 10 marks
+[ ] Use clear class names and consistent indentation.
+[ ] Avoid unnecessary repeated CSS.
+[ ] Add comments for important sections.
+[ ] Keep HTML and CSS separate.
+[ ] Check for broken links and obvious browser errors.
+
+3. REQUIRED FILE STRUCTURE
+
+day11-product-showcase/
+|-- index.html
+|-- style.css
+|-- images/ (optional)
+|-- README.txt
+
+README.txt must include:
+- Project title and chosen theme
+- Features implemented
+- How to run the project
+- At least 3 CSS effects used and what each does
+
+4. RULES
+1. Use only HTML and CSS. Do not use JavaScript, Bootstrap, Tailwind, or other frameworks.
+2. You may use a small number of royalty-free images or simple CSS shapes.
+3. Do not copy an entire ready-made template; build the layout yourself.
+4. Keep animations smooth and subtle.
+5. The page must remain usable without hovering.
+
+5. SUGGESTED 2-HOUR PLAN
+0–15 min: Choose theme, sections, and palette.
+15–40 min: Build HTML structure.
+40–75 min: Create layout and visual styling.
+75–100 min: Add transitions, transforms, hover, and focus effects.
+100–115 min: Test responsive layout and reduced-motion behavior.
+115–120 min: Clean up code and README.
+
+6. SUBMISSION CHECKLIST
+[ ] Submit the complete project folder.
+[ ] Confirm index.html opens and style.css loads.
+[ ] Include screenshots at desktop and mobile sizes.
+[ ] Include README.txt.
+[ ] Ensure there are no broken links or missing assets.
+
+7. VIVA / REVIEW QUESTIONS
+1. What is the difference between transition and animation in CSS?
+2. What does transform: translateY(-6px) do?
+3. What is the purpose of the :hover pseudo-class?
+4. Why is :focus-visible important?
+5. What does transition-duration control?
+6. What is the difference between scale(1.05) and translateY(-5px)?
+7. Why should hover not be the only way to reveal important content?
+8. What does prefers-reduced-motion do?
+9. How did you make the page responsive?
+10. Name one way to improve accessibility.
+
+8. EVALUATION RUBRIC — 100 MARKS
+HTML structure and semantic elements:             15
+CSS layout, typography, visual consistency:       20
+Transitions applied correctly:                    15
+Transforms applied appropriately:                 15
+Hover, focus, and accessibility:                  15
+Responsive design and testing:                    10
+Code quality and README:                           10
+TOTAL:                                           100
+
+9. BONUS CHALLENGE — OPTIONAL
+Create a featured product card that stands out with a badge, border, or background treatment. Add a subtle button press effect using :active and ensure it has a clear keyboard focus state.
+
+END OF DAY 11 ASSIGNMENT
