@@ -1,0 +1,89 @@
+CSS Variables, Reusable Components, and Design Systems
+
+
+2. TASK SCENARIO
+Create a one-page portfolio for a fictional student developer. Introduce the person, show their skills and projects, and provide a contact section. You may use your own details, but do not publish private contact information.
+
+3. TASK REQUIREMENTS
+
+A. HTML Structure — 15 marks
+[ ] Create index.html.
+[ ] Add a header with a name/logo and navigation links.
+[ ] Add a hero section with name, role, introduction, and call-to-action.
+[ ] Add an About section.
+[ ] Add a Skills section with at least 6 skills.
+[ ] Add a Projects section with at least 3 project cards.
+[ ] Add a Contact section with a contact link or clearly labelled demo form.
+[ ] Add a footer and use semantic HTML where appropriate.
+
+B. CSS Variables / Design Tokens — 20 marks
+[ ] Create a :root block in style.css.
+[ ] Define at least 6 CSS custom properties, including primary color, accent color, background color, card/surface color, text color, and a spacing or border-radius value.
+[ ] Use var(--variable-name) throughout the stylesheet.
+[ ] Avoid repeating the same color or spacing values unnecessarily.
+[ ] Change one variable and confirm multiple parts of the page update consistently.
+
+Example:
+:root {
+    --color-primary: #3157d5;
+    --color-background: #f7f8fc;
+    --color-text: #20243a;
+    --radius-card: 16px;
+    --space-section: 4rem;
+}
+
+C. Reusable Component Styles — 20 marks
+[ ] Create a reusable .container class.
+[ ] Create a reusable .button class.
+[ ] Create a reusable .card class and use it for all project cards.
+[ ] Keep headings and section spacing consistent.
+[ ] Use shared styles for links and focus states.
+[ ] Keep cards visually consistent while allowing different content.
+
+D. Layout & Visual Design — 15 marks
+[ ] Use Flexbox or CSS Grid where appropriate.
+[ ] Create clear visual hierarchy.
+[ ] Keep typography readable and spacing consistent.
+[ ] Use a consistent design style across all sections.
+[ ] Add subtle borders, shadows, or backgrounds where useful.
+[ ] Reuse Day 11 hover and transition techniques appropriately.
+
+E. Responsive Design — 15 marks
+[ ] Make the portfolio usable on mobile, tablet, and desktop.
+[ ] Use at least one media query.
+[ ] Stack project cards on narrow screens and arrange them in columns on wider screens.
+[ ] Prevent horizontal scrolling and overlapping content.
+[ ] Test at approximately 375px, 768px, and 1280px widths.
+
+F. Accessibility & Code Quality — 15 marks
+[ ] Use meaningful HTML and descriptive link text.
+[ ] Provide visible :focus-visible styles.
+[ ] Ensure sufficient color contrast.
+[ ] Use descriptive alt text for meaningful images.
+[ ] Use clear class names and consistent indentation.
+[ ] Add comments for design tokens and major sections.
+[ ] Keep HTML and CSS in separate files.
+
+4. REQUIRED FILE STRUCTURE
+
+day12-portfolio-design-system/
+|-- index.html
+|-- style.css
+|-- README.txt
+|-- images/ (optional)
+
+README.txt must include:
+- Project title and description
+- CSS variables created and what they control
+- Reusable classes created
+- Viewport sizes tested
+- Instructions to open the project
+
+5. RULES
+1. Use only HTML and CSS. Do not use JavaScript, Bootstrap, Tailwind, or other frameworks.
+2. Do not copy a complete ready-made portfolio template.
+3. Use CSS custom properties for design tokens.
+4. Reuse classes rather than creating separate styles for identical components.
+5. A contact form does not need to submit data; if included, label it as a demo form.
+6. Do not include private personal information in a publicly shared project.
+
