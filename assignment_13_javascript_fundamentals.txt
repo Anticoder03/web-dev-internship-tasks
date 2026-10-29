@@ -1,0 +1,60 @@
+JavaScript Fundamentals — Variables, Data Types, Operators & Conditions
+
+A. HTML & File Setup
+[ ] Create index.html, style.css, and script.js.
+[ ] Add a heading, short description, calculator area, and result area.
+[ ] Link style.css and script.js correctly.
+[ ] Use semantic HTML where appropriate.
+
+B. Variables & Data Types
+[ ] Use let and const appropriately.
+[ ] Store a student name and marks for five subjects.
+[ ] Use strings for text and numbers for marks.
+[ ] Use clear, meaningful variable names.
+[ ] Be ready to explain let vs const.
+
+C. Operators & Calculations 
+[ ] Calculate total marks.
+[ ] Calculate the average.
+[ ] Calculate percentage assuming each subject is out of 100.
+[ ] Use arithmetic operators such as + and /.
+[ ] Display results clearly and format decimal values sensibly.
+
+D. Conditional Logic
+[ ] Use if / else if / else to assign a practice category.
+[ ] Example categories: Excellent, Good, Needs Improvement.
+[ ] Choose and document reasonable thresholds.
+[ ] Handle invalid marks appropriately.
+[ ] Make clear that categories are practice results, not official grades.
+
+E. Display & Debugging
+[ ] Display student name, total, average, percentage, and category.
+[ ] Use console.log() at least three times.
+[ ] Open the browser developer console and fix errors.
+[ ] If using inputs, convert input values to numbers before calculating.
+
+F. Styling & Usability 
+[ ] Use readable typography, spacing, and clear result styling.
+[ ] Make the layout usable on mobile.
+[ ] Do not use Bootstrap, Tailwind, or other frameworks.
+
+G. Code Quality & Explanation
+[ ] Keep HTML, CSS, and JavaScript in separate files.
+[ ] Use consistent indentation and comments for key steps.
+[ ] Include README.txt with setup instructions and a short explanation of variables, operators, and conditions.
+
+3. REQUIRED FILE STRUCTURE
+
+day13-student-marks-calculator/
+|-- index.html
+|-- style.css
+|-- script.js
+|-- README.txt
+
+4. RULES
+1. Use vanilla JavaScript only.
+2. All calculations must be done in JavaScript.
+3. If using input fields, each mark must be between 0 and 100.
+4. Do not leave browser console errors.
+5. Write and understand your own code.
+6. Do not publish real student personal data.
