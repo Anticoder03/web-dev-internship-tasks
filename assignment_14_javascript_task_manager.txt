@@ -1,0 +1,89 @@
+JavaScript Functions, Arrays, Loops & DOM Manipulation
+
+A. HTML Structure
+[ ] Create index.html, style.css, and script.js.
+[ ] Add a heading and short description for the Daily Task Manager.
+[ ] Add a text input for entering a task.
+[ ] Add an Add Task button.
+[ ] Add a container where tasks will be displayed.
+[ ] Add an area showing the total number of tasks.
+[ ] Link style.css and script.js correctly.
+[ ] Use semantic HTML elements where appropriate.
+
+B. JavaScript Functions
+[ ] Create an addTask() function.
+[ ] Create a renderTasks() function to display the task list.
+[ ] Create a deleteTask() function or equivalent logic.
+[ ] Create a toggleTask() function or equivalent logic to mark tasks complete/incomplete.
+[ ] Use functions to avoid repeating the same code.
+[ ] Give each function one clear responsibility.
+
+C. Arrays & Objects
+[ ] Create an array to store tasks.
+[ ] Store each task as an object with at least an id, text, and completed property.
+[ ] Add new task objects to the array.
+[ ] Remove a task from the array when it is deleted.
+[ ] Update the completed property when the task status changes.
+[ ] Use array methods such as push(), filter(), and find() where appropriate.
+
+D. Loops & Array Methods
+[ ] Use forEach() or a loop to display all tasks.
+[ ] Use filter() to remove a task by its id or calculate completed-task counts.
+[ ] Use find() or another suitable method to locate a task.
+[ ] Display a friendly message when there are no tasks.
+
+E. DOM Manipulation & Events
+[ ] Select HTML elements using getElementById() or querySelector().
+[ ] Read the task input value.
+[ ] Add a click event listener to the Add Task button.
+[ ] Create task elements dynamically using document.createElement().
+[ ] Update the task list in the DOM after adding, completing, or deleting tasks.
+[ ] Clear the input field after a successful addition.
+[ ] Do not add empty or whitespace-only tasks.
+[ ] Allow the Enter key to add a task.
+[ ] Update the task counter whenever the list changes.
+
+F. Styling & Usability
+[ ] Use readable typography, spacing, and colors.
+[ ] Make completed tasks visually different, for example with line-through text.
+[ ] Style the Add, Complete, and Delete buttons clearly.
+[ ] Make the task manager usable on mobile screens.
+[ ] Use visible keyboard focus styles.
+[ ] Do not use Bootstrap, Tailwind, or other frameworks.
+
+G. Code Quality & Testing
+[ ] Keep HTML, CSS, and JavaScript in separate files.
+[ ] Use meaningful variable and function names.
+[ ] Add comments to explain important logic.
+[ ] Test adding, completing, and deleting multiple tasks.
+[ ] Test adding an empty task.
+[ ] Test the Enter key.
+[ ] Confirm there are no errors in the browser console.
+[ ] Include README.txt with project instructions and a short explanation of the JavaScript concepts used.
+
+3. REQUIRED FILE STRUCTURE
+
+day14-daily-task-manager/
+|-- index.html
+|-- style.css
+|-- script.js
+|-- README.txt
+
+4. RULES
+
+1. Use vanilla JavaScript only. Do not use React, jQuery, Bootstrap, Tailwind, or other frameworks.
+2. Store tasks in a JavaScript array while the page is open.
+3. Do not use localStorage in this assignment; it will be introduced in a later lesson.
+4. Do not use alert() as the main way to display task information.
+5. Validate user input before adding a task.
+6. Write and understand the code yourself.
+7. Include a screenshot showing multiple tasks.
+8. Do not leave browser console errors.
+
+5. BONUS CHALLENGE
+
+[ ] Add filters for All Tasks, Active Tasks, and Completed Tasks.
+[ ] Display the number of completed tasks and remaining tasks.
+[ ] Use array methods to calculate these values.
+
+END OF DAY 14 ASSIGNMENT
