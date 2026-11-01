@@ -1,0 +1,104 @@
+JavaScript localStorage, JSON & Persistent Task Management
+
+A. HTML Structure
+[ ] Create index.html, style.css, and script.js.
+[ ] Add a heading and short description for the Task Manager.
+[ ] Add an input field for entering a task.
+[ ] Add an Add Task button.
+[ ] Add a section to display all tasks.
+[ ] Add filters: All Tasks, Active Tasks, and Completed Tasks.
+[ ] Add counters for total, completed, and remaining tasks.
+[ ] Link style.css and script.js correctly.
+[ ] Use semantic HTML elements where appropriate.
+
+B. JavaScript localStorage
+[ ] Use localStorage to save the task list in the browser.
+[ ] Use localStorage.setItem() to store tasks.
+[ ] Use localStorage.getItem() to retrieve saved tasks.
+[ ] Use JSON.stringify() before saving the task array.
+[ ] Use JSON.parse() when reading saved data.
+[ ] Load saved tasks automatically when the page opens.
+[ ] Save newly added, completed, and deleted task changes.
+[ ] Handle the case where no saved tasks exist.
+
+C. Task Management Functions
+[ ] Create an addTask() function.
+[ ] Create a renderTasks() function to display tasks.
+[ ] Create a saveTasks() function to save tasks in localStorage.
+[ ] Create a loadTasks() function to retrieve saved tasks.
+[ ] Create a deleteTask() function.
+[ ] Create a toggleTask() function to mark tasks complete or active.
+[ ] Keep functions reusable and give each function one clear responsibility.
+[ ] Use unique IDs to identify individual tasks.
+
+D. Arrays, Objects & Filtering
+[ ] Store tasks in an array of objects.
+[ ] Each task object must contain an id, text, and completed property.
+[ ] Use push() to add new tasks.
+[ ] Use filter() to remove tasks and display filtered results.
+[ ] Use forEach() or another suitable loop to render tasks.
+[ ] Calculate completed and remaining task counts.
+[ ] Make All Tasks display every task.
+[ ] Make Active Tasks display only incomplete tasks.
+[ ] Make Completed Tasks display only completed tasks.
+
+E. DOM Manipulation & Events
+[ ] Select elements using querySelector() or getElementById().
+[ ] Use addEventListener() to handle button clicks.
+[ ] Create task elements dynamically using document.createElement().
+[ ] Update the page whenever a task is added, completed, or deleted.
+[ ] Clear the input field after adding a task.
+[ ] Prevent empty or whitespace-only tasks.
+[ ] Allow the Enter key to add a task.
+[ ] Update counters whenever the task list changes.
+[ ] Display a message when no tasks match the selected filter.
+
+F. Styling & Usability
+[ ] Use readable typography, spacing, and colors.
+[ ] Make completed tasks visually different from active tasks.
+[ ] Style the All, Active, and Completed filter buttons.
+[ ] Highlight the currently selected filter.
+[ ] Make the Task Manager responsive on mobile screens.
+[ ] Add visible keyboard focus styles.
+[ ] Show a clear message when the task list is empty.
+[ ] Do not use Bootstrap, Tailwind, React, or other frameworks.
+
+G. Testing & Code Quality
+[ ] Keep HTML, CSS, and JavaScript in separate files.
+[ ] Use meaningful variable and function names.
+[ ] Add comments for important JavaScript logic.
+[ ] Add tasks and refresh the browser to confirm they remain saved.
+[ ] Complete tasks and refresh to verify their status is saved.
+[ ] Delete a task and refresh to verify it stays deleted.
+[ ] Test all three task filters.
+[ ] Check that there are no browser console errors.
+[ ] Include README.txt explaining the project, features, localStorage usage, and how to run it.
+
+3. REQUIRED FILE STRUCTURE
+
+day15-persistent-task-manager/
+|-- index.html
+|-- style.css
+|-- script.js
+|-- README.txt
+
+4. RULES
+
+1. Use vanilla JavaScript only.
+2. Use localStorage to save task data in the browser.
+3. Use JSON.stringify() and JSON.parse() to store and retrieve the task array.
+4. Do not use a backend, database, or external storage service.
+5. Do not store passwords or sensitive personal information.
+6. Validate user input before adding a task.
+7. Write and understand the code yourself.
+8. Do not leave browser console errors.
+
+5. BONUS CHALLENGE
+
+[ ] Add a Clear Completed button to remove all completed tasks.
+[ ] Add a confirmation step before clearing completed tasks.
+[ ] Add a button to delete all tasks.
+[ ] Display a friendly message when all tasks are completed.
+[ ] Make sure every change is saved to localStorage.
+
+END OF DAY 15 ASSIGNMENT
