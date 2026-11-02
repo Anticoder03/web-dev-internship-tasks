@@ -1,0 +1,99 @@
+JavaScript Events, Form Validation & Interactive Registration Form
+
+A. HTML Structure
+[ ] Create index.html, style.css, and script.js.
+[ ] Add a heading and short description for a Student Registration Form.
+[ ] Add fields for full name, email, phone number, password, and confirm password.
+[ ] Add a dropdown to select a course.
+[ ] Add radio buttons for gender or preferred study mode.
+[ ] Add a checkbox to accept the terms and conditions.
+[ ] Add Submit and Reset buttons.
+[ ] Add an area for validation messages and successful submission feedback.
+[ ] Link style.css and script.js correctly.
+[ ] Use semantic HTML elements and suitable input types.
+
+B. JavaScript Events
+[ ] Use addEventListener() to handle form submission.
+[ ] Use the submit event on the form.
+[ ] Use input or blur events to validate fields as the user enters information.
+[ ] Use the change event for dropdowns, radio buttons, and checkboxes where appropriate.
+[ ] Prevent default form submission using event.preventDefault().
+[ ] Display feedback when the form is submitted successfully.
+[ ] Make the Reset button clear the form and validation messages.
+
+C. Form Validation
+[ ] Check that the full name is not empty.
+[ ] Check that the email has a valid format.
+[ ] Check that the phone number contains an appropriate number of digits.
+[ ] Check that the password meets a minimum length requirement.
+[ ] Check that confirm password matches the password.
+[ ] Check that a course has been selected.
+[ ] Check that a radio option has been selected.
+[ ] Check that the terms checkbox is checked.
+[ ] Display a clear error message near each invalid field.
+[ ] Prevent submission while validation errors exist.
+
+D. JavaScript Functions & DOM Manipulation
+[ ] Create a validateForm() function.
+[ ] Create separate validation functions for important fields where appropriate.
+[ ] Create a showError() function for field-specific messages.
+[ ] Create a clearErrors() function to remove old messages.
+[ ] Use querySelector() or getElementById() to access form elements.
+[ ] Use classList.add() and classList.remove() for validation styles.
+[ ] Use textContent to display messages safely.
+[ ] Show a success message when all fields pass validation.
+
+E. Styling & Usability
+[ ] Style the form using CSS.
+[ ] Add clear labels for every input.
+[ ] Identify required fields clearly.
+[ ] Use different styles for valid and invalid fields.
+[ ] Make error and success messages easy to identify.
+[ ] Add visible keyboard focus styles.
+[ ] Make the form responsive on mobile screens.
+[ ] Keep buttons and form controls easy to use.
+[ ] Do not use Bootstrap, Tailwind, React, or other frameworks.
+
+F. Testing & Code Quality
+[ ] Keep HTML, CSS, and JavaScript in separate files.
+[ ] Use meaningful variable and function names.
+[ ] Add comments for important validation logic.
+[ ] Test the form with all fields empty.
+[ ] Test an invalid email address.
+[ ] Test a phone number with an incorrect length.
+[ ] Test passwords that do not match.
+[ ] Test submission without accepting the terms.
+[ ] Test a completely valid form.
+[ ] Confirm invalid data cannot be submitted.
+[ ] Check that there are no browser console errors.
+[ ] Include README.txt explaining the project, validation rules, and how to run it.
+
+3. REQUIRED FILE STRUCTURE
+
+day16-student-registration-form/
+|-- index.html
+|-- style.css
+|-- script.js
+|-- README.txt
+
+4. RULES
+
+1. Use vanilla JavaScript only.
+2. Use JavaScript for the main form validation logic.
+3. Use event listeners instead of inline HTML event attributes.
+4. Use event.preventDefault() to handle form submission with JavaScript.
+5. Do not use alert() as the main way to display validation messages.
+6. Do not send or store real personal information.
+7. Do not use a backend or database; this is a frontend-only practice form.
+8. Write and understand the code yourself.
+9. Do not leave browser console errors.
+
+5. BONUS CHALLENGE
+
+[ ] Add a live password-strength indicator.
+[ ] Show or hide the password using a toggle button.
+[ ] Disable the Submit button until the terms checkbox is selected.
+[ ] Add a character counter for the full name field.
+[ ] Display a formatted registration summary after successful validation.
+
+
