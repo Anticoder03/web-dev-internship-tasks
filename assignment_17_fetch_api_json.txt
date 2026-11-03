@@ -1,0 +1,97 @@
+JavaScript Fetch API, Promises & Working with JSON Data
+
+A. HTML Structure
+[ ] Create index.html, style.css, and script.js.
+[ ] Add a heading and short description for an API Data Explorer.
+[ ] Add a button labelled Load Users.
+[ ] Add a section to display user information.
+[ ] Add a loading message or spinner area.
+[ ] Add an error message area.
+[ ] Add a button to reload or refresh the data.
+[ ] Link style.css and script.js correctly.
+[ ] Use semantic HTML elements where appropriate.
+
+B. Understanding APIs & JSON
+[ ] Understand what an API is and why websites use APIs.
+[ ] Understand what JSON (JavaScript Object Notation) is.
+[ ] Use this public API endpoint: https://jsonplaceholder.typicode.com/users
+[ ] Open the API URL in a browser and inspect the JSON response.
+[ ] Identify properties such as name, email, phone, and website.
+[ ] Explain the difference between JSON data and a JavaScript object.
+
+C. Fetch API & Promises
+[ ] Use fetch() to request data from the API.
+[ ] Use .then() to handle the response.
+[ ] Use response.json() to convert the response into JavaScript data.
+[ ] Process the returned data using promise handling.
+[ ] Use .catch() to handle request errors.
+[ ] Check response.ok before processing the response.
+[ ] Display a loading message while the request is running.
+[ ] Hide the loading message after the request completes or fails.
+
+D. Async/Await
+[ ] Create an async function named loadUsers().
+[ ] Use await fetch() to request the API data.
+[ ] Use await response.json() to read the response.
+[ ] Use try/catch to handle errors.
+[ ] Compare async/await with the .then() approach.
+[ ] Display a clear error message if the request fails.
+
+E. Displaying API Data with DOM Manipulation
+[ ] Create a displayUsers() function.
+[ ] Use a loop or forEach() to process the users array.
+[ ] Create user cards dynamically using document.createElement().
+[ ] Display each user's name and email.
+[ ] Display each user's phone number and website.
+[ ] Use textContent to insert API-provided text safely.
+[ ] Clear old user cards before displaying refreshed data.
+[ ] Display a friendly message if the API returns no users.
+
+F. Styling & Usability
+[ ] Create a clean and readable card layout.
+[ ] Use CSS Grid or Flexbox to arrange user cards.
+[ ] Style the Load Users and refresh buttons.
+[ ] Make the page responsive on mobile screens.
+[ ] Make loading, error, and empty states visually clear.
+[ ] Add hover and keyboard focus styles to buttons.
+[ ] Do not use Bootstrap, Tailwind, React, or other frameworks.
+
+G. Testing & Code Quality
+[ ] Keep HTML, CSS, and JavaScript in separate files.
+[ ] Use meaningful function and variable names.
+[ ] Add comments for important API request logic.
+[ ] Test loading users successfully.
+[ ] Test the refresh button.
+[ ] Test the error state by temporarily using an invalid API URL.
+[ ] Confirm the loading message disappears after success or failure.
+[ ] Check that there are no browser console errors.
+[ ] Include README.txt explaining the API, endpoint, Fetch API, and how to run the project.
+
+3. REQUIRED FILE STRUCTURE
+
+day17-api-data-explorer/
+|-- index.html
+|-- style.css
+|-- script.js
+|-- README.txt
+
+4. RULES
+
+1. Use vanilla JavaScript only.
+2. Use the Fetch API to retrieve data.
+3. Use the provided JSONPlaceholder public API endpoint.
+4. Do not hardcode the returned user records into the webpage.
+5. Handle loading, success, empty, and error states.
+6. Do not use API keys or submit personal information.
+7. Do not use a backend or database for this assignment.
+8. Write and understand the code yourself.
+9. Do not leave browser console errors.
+
+5. BONUS CHALLENGE
+
+[ ] Add a search input to filter users by name.
+[ ] Add a dropdown to filter users by email domain or company.
+[ ] Display the total number of users loaded.
+[ ] Add a user-details section that shows more information when a card is selected.
+[ ] Add a button to sort users alphabetically by name.
+
