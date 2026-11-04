@@ -1,0 +1,98 @@
+JavaScript Search, Filter, Sort & Dynamic Data Display
+
+A. HTML & File Setup
+[ ] Create index.html, style.css, and script.js.
+[ ] Build a heading and short introduction for a User Directory.
+[ ] Add a search input with a visible label.
+[ ] Add a company filter dropdown.
+[ ] Add a sort dropdown with Name A–Z and Name Z–A options.
+[ ] Add a Reset Filters button.
+[ ] Add a results counter and a container for user cards.
+[ ] Add loading, error, and no-results messages.
+[ ] Link style.css and script.js correctly.
+
+B. Fetching & Storing API Data
+[ ] Fetch user records from https://jsonplaceholder.typicode.com/users.
+[ ] Use async/await and try/catch for the API request.
+[ ] Check response.ok before reading the response.
+[ ] Store the fetched users in an array for later searching and filtering.
+[ ] Show a loading message during the request.
+[ ] Show a useful error message if loading fails.
+[ ] Avoid fetching data again for every search or filter change.
+
+C. Search Functionality
+[ ] Search users by name as the user types.
+[ ] Use the input event to update results without reloading the page.
+[ ] Make searching case-insensitive.
+[ ] Ignore leading and trailing spaces in the search query.
+[ ] Use filter() and includes() to find matching users.
+[ ] Show a no-results message when no names match.
+[ ] Restore all matching records when the search field is cleared.
+
+D. Filtering & Sorting
+[ ] Populate the company dropdown using company names from the API response.
+[ ] Add an All Companies option.
+[ ] Filter users by the selected company.
+[ ] Sort users alphabetically by name using sort() and localeCompare().
+[ ] Support both A–Z and Z–A sorting.
+[ ] Make search, company filtering, and sorting work together.
+[ ] Avoid mutating the original user array when sorting displayed results.
+[ ] Reset all controls to their default values when Reset Filters is clicked.
+
+E. DOM Manipulation & Events
+[ ] Create a renderUsers() function to display user cards.
+[ ] Display each user's name, email, company, and city.
+[ ] Use document.createElement() and textContent to render API values safely.
+[ ] Clear old cards before displaying updated results.
+[ ] Create an applyFilters() function to combine search, filter, and sort logic.
+[ ] Use addEventListener() for input, change, and click events.
+[ ] Update the results counter after every change.
+[ ] Keep the UI responsive while users interact with the controls.
+
+F. Styling & Usability
+[ ] Create a neat toolbar for search, filter, sort, and reset controls.
+[ ] Display users in a responsive card grid using CSS Grid or Flexbox.
+[ ] Make the page usable on mobile screens.
+[ ] Add visible labels and keyboard focus styles for controls.
+[ ] Make loading, error, and empty states easy to understand.
+[ ] Ensure long email addresses and company names do not break the layout.
+
+G. Testing & Code Quality
+[ ] Test searching for an existing user and a nonexistent user.
+[ ] Test uppercase and lowercase search queries.
+[ ] Test company filtering separately and together with search.
+[ ] Test both sorting directions.
+[ ] Test Reset Filters after changing multiple controls.
+[ ] Test a failed request by temporarily changing the API URL.
+[ ] Confirm the results counter is accurate.
+[ ] Check the browser console for errors.
+[ ] Use meaningful function names and consistent indentation.
+[ ] Include README.txt describing the features, API endpoint, and how to run the project.
+
+3. REQUIRED FILE STRUCTURE
+
+day18-user-directory/
+|-- index.html
+|-- style.css
+|-- script.js
+|-- README.txt
+
+4. RULES
+1. Use HTML, CSS, and vanilla JavaScript only.
+2. Use the JSONPlaceholder users API for the displayed records.
+3. Do not hardcode the user cards or company options.
+4. Perform search, filtering, and sorting on the fetched data in JavaScript.
+5. Use event listeners rather than inline HTML event attributes.
+6. Do not use React, jQuery, Bootstrap, Tailwind, or other frameworks.
+7. Do not use a backend or database for this assignment.
+8. Handle loading, errors, and empty results properly.
+9. Do not leave browser console errors.
+
+5. BONUS CHALLENGE
+[ ] Add a search option that also matches email addresses.
+[ ] Highlight the matching part of a user's name safely without inserting untrusted HTML.
+[ ] Add a result-count summary such as “Showing 4 of 10 users”.
+[ ] Add an ascending/descending city sort option.
+[ ] Preserve search and filter choices in the URL query string so the view can be shared.
+
+
