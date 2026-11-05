@@ -1,0 +1,116 @@
+JavaScript Pagination, Detail View & Favorites — Building an Interactive Directory
+
+A. HTML Structure
+[ ] Create index.html, style.css, and script.js.
+[ ] Add a heading and short description for the User Directory.
+[ ] Add a search input to search users by name.
+[ ] Add a container to display user cards.
+[ ] Add Previous and Next pagination buttons.
+[ ] Add an area to display the current page number and total pages.
+[ ] Add a modal or section to display details about a selected user.
+[ ] Add a button to show favourite users.
+[ ] Link style.css and script.js correctly.
+[ ] Use semantic HTML elements where appropriate.
+
+B. Fetching & Managing API Data
+[ ] Use the JSONPlaceholder API endpoint: https://jsonplaceholder.typicode.com/users
+[ ] Fetch user data using the Fetch API.
+[ ] Use async/await and try/catch for API requests.
+[ ] Store fetched users in an array.
+[ ] Keep the original user list separate from the currently displayed list.
+[ ] Display a loading message while data is being fetched.
+[ ] Display a helpful error message if the API request fails.
+[ ] Avoid making a new API request every time the user changes the page.
+
+C. Pagination
+[ ] Display only a limited number of users on each page.
+[ ] Show 3 or 4 users per page.
+[ ] Calculate the total number of pages based on the filtered user list.
+[ ] Make the Next button display the next set of users.
+[ ] Make the Previous button display the previous set of users.
+[ ] Disable Previous on the first page.
+[ ] Disable Next on the last page.
+[ ] Reset to the first page when a new search or filter is applied.
+[ ] Update the page number and user cards after every page change.
+[ ] Handle cases where the search returns no users.
+
+D. User Detail View
+[ ] Add a View Details button to every user card.
+[ ] Display the selected user's full name, email, phone, website, company, and address.
+[ ] Use the selected user's ID to find the correct user in the stored array.
+[ ] Display details in a modal or separate details section.
+[ ] Add a Close button to hide the details view.
+[ ] Ensure the details view displays information for the correct user.
+[ ] Use textContent when inserting API-provided text into the page.
+
+E. Favourite Users
+[ ] Add a Favourite button to every user card.
+[ ] Allow users to add or remove a user from favourites.
+[ ] Store favourite user IDs in an array.
+[ ] Visually distinguish favourite users from other users.
+[ ] Add a Show Favourites filter or button.
+[ ] Update the displayed list when the favourites filter is selected.
+[ ] Show a friendly message when there are no favourite users.
+[ ] Keep favourite state consistent when changing pages or searching.
+
+F. JavaScript Functions & DOM Manipulation
+[ ] Create a loadUsers() function to fetch API data.
+[ ] Create a renderUsers() function to display the current page of users.
+[ ] Create a renderPagination() function to update pagination controls.
+[ ] Create a showUserDetails() function to display selected user information.
+[ ] Create a toggleFavourite() function to add or remove favourites.
+[ ] Create a function to apply search and favourite filters.
+[ ] Use array methods such as filter(), find(), and slice().
+[ ] Use addEventListener() to handle button and input events.
+[ ] Keep functions reusable and give each function one clear responsibility.
+
+G. Styling & Usability
+[ ] Use CSS Grid or Flexbox to arrange user cards.
+[ ] Style pagination buttons and clearly show the active page.
+[ ] Style favourite buttons with clear active and inactive states.
+[ ] Make the details modal or section easy to read.
+[ ] Make the directory responsive on mobile screens.
+[ ] Add visible keyboard focus styles.
+[ ] Ensure buttons have clear labels.
+[ ] Do not use Bootstrap, Tailwind, React, or other frameworks.
+
+H. Testing & Code Quality
+[ ] Keep HTML, CSS, and JavaScript in separate files.
+[ ] Use meaningful variable and function names.
+[ ] Add comments for pagination and filtering logic.
+[ ] Test moving forward and backward between pages.
+[ ] Test pagination after searching for a user.
+[ ] Test opening and closing user details.
+[ ] Test adding and removing favourite users.
+[ ] Test the empty favourites state.
+[ ] Confirm there are no browser console errors.
+[ ] Include README.txt explaining the API, pagination, detail view, favourites, and how to run the project.
+
+3. REQUIRED FILE STRUCTURE
+
+day19-interactive-user-directory/
+|-- index.html
+|-- style.css
+|-- script.js
+|-- README.txt
+
+4. RULES
+
+1. Use vanilla JavaScript only.
+2. Use the provided JSONPlaceholder API endpoint to retrieve users.
+3. Do not hardcode API user records into the webpage.
+4. Use JavaScript arrays and objects to manage user and favourite data.
+5. Do not use a backend or database for this assignment.
+6. Do not use external libraries or frameworks.
+7. Handle loading, error, and empty states.
+8. Write and understand the code yourself.
+9. Do not leave browser console errors.
+
+5. BONUS CHALLENGE
+
+[ ] Save favourite user IDs in localStorage so favourites remain after refreshing the page.
+[ ] Add a dropdown to choose how many users appear per page.
+[ ] Add buttons to jump to the first page and the last page.
+[ ] Close the details modal when the user clicks outside it or presses Escape.
+[ ] Add a clear search button.
+
