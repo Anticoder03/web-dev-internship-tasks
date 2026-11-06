@@ -1,0 +1,110 @@
+Modern JavaScript (ES6+) — Destructuring, Spread, Rest, Template Literals & Modules
+
+A. Project Setup & HTML Structure
+[ ] Create index.html, style.css, and a JavaScript entry file named script.js.
+[ ] Add a heading and short description for a Product Catalog.
+[ ] Add a section to display product cards.
+[ ] Add a search input to search products by name.
+[ ] Add a category dropdown to filter products.
+[ ] Add a section to display the total number of products.
+[ ] Link style.css and script.js correctly.
+[ ] Use type="module" when loading script.js.
+[ ] Use semantic HTML elements where appropriate.
+
+B. Template Literals
+[ ] Use template literals with backticks to create dynamic product-card content.
+[ ] Display each product's name, category, price, and description.
+[ ] Use ${} expressions to insert JavaScript values into strings.
+[ ] Create at least one dynamic message using a template literal.
+[ ] Avoid unnecessary string concatenation with the + operator.
+
+C. Destructuring
+[ ] Create an array containing at least five sample product objects.
+[ ] Use object destructuring to extract properties such as name, price, and category.
+[ ] Use array destructuring to extract values from an array.
+[ ] Use destructuring in a function parameter where appropriate.
+[ ] Give extracted variables meaningful names.
+[ ] Explain array destructuring and object destructuring in README.txt.
+
+D. Spread & Rest Operators
+[ ] Use the spread operator (...) to create a copy of the products array.
+[ ] Add a new product to a copied array without modifying the original array.
+[ ] Use the spread operator to combine two arrays.
+[ ] Use the rest parameter (...) in a function that accepts multiple values.
+[ ] Explain how spread and rest use the same syntax for different purposes.
+[ ] Avoid unintentionally modifying the original product data.
+
+E. JavaScript Modules
+[ ] Create data.js to store the sample product data.
+[ ] Export the product array from data.js.
+[ ] Import the product array into script.js.
+[ ] Create a separate helpers.js file.
+[ ] Export at least two reusable functions from helpers.js.
+[ ] Import and use those functions inside script.js.
+[ ] Use named exports and named imports.
+[ ] Keep each module focused on one responsibility.
+[ ] Run the project through a local development server rather than opening the HTML file directly.
+
+F. Product Search, Filtering & Rendering
+[ ] Display all products when the page first loads.
+[ ] Create a renderProducts() function to display product cards.
+[ ] Search products by name as the user types.
+[ ] Filter products by the selected category.
+[ ] Allow search and category filtering to work together.
+[ ] Display a friendly message when no products match.
+[ ] Update the product count after search or filtering.
+[ ] Use array methods such as filter(), map(), and forEach() where appropriate.
+[ ] Use textContent or safe DOM methods when displaying user-entered text.
+
+G. Styling & Usability
+[ ] Use CSS Grid or Flexbox to arrange product cards.
+[ ] Create consistent styling for all product cards.
+[ ] Style the search input and category dropdown.
+[ ] Make the catalog responsive on mobile screens.
+[ ] Add hover and keyboard focus styles to interactive controls.
+[ ] Ensure product information is readable and well organized.
+[ ] Do not use Bootstrap, Tailwind, React, or other frameworks.
+
+H. Code Quality & Testing
+[ ] Keep HTML, CSS, and JavaScript in separate files.
+[ ] Use meaningful variable and function names.
+[ ] Add comments for important logic.
+[ ] Confirm all imports and exports work correctly.
+[ ] Test search with matching and non-matching product names.
+[ ] Test each category filter.
+[ ] Test search and category filtering together.
+[ ] Confirm the original product array is not unintentionally modified.
+[ ] Check the browser console for module or JavaScript errors.
+[ ] Include README.txt explaining the ES6+ features used and how to run the project.
+
+3. REQUIRED FILE STRUCTURE
+
+day20-modern-javascript-product-catalog/
+|-- index.html
+|-- style.css
+|-- script.js
+|-- data.js
+|-- helpers.js
+|-- README.txt
+
+4. RULES
+
+1. Use vanilla JavaScript only.
+2. Use the ES6+ features required in this assignment.
+3. Use JavaScript modules with import and export.
+4. Load the main JavaScript file using type="module".
+5. Run the project using a local development server.
+6. Do not use React, jQuery, Bootstrap, Tailwind, or other frameworks.
+7. Separate data and reusable helper functions into modules.
+8. Write and understand the code yourself.
+9. Do not leave browser console errors.
+
+5. BONUS CHALLENGE
+
+[ ] Add a sort dropdown for price: Low to High and High to Low.
+[ ] Add a Reset Filters button.
+[ ] Add a function using the rest parameter to calculate the total price of selected products.
+[ ] Add a featured-product section using destructuring.
+[ ] Add a helper module for formatting prices or product labels.
+
+
