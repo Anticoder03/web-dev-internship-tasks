@@ -1,0 +1,95 @@
+JavaScript Error Handling, Debugging & Clean Code — Currency Converter
+
+A. Project Setup & HTML Structure
+[ ] Create index.html, style.css, and script.js.
+[ ] Add a heading and short description for a Currency Converter.
+[ ] Add an amount input and dropdowns for source and target currencies.
+[ ] Add a Convert button and a result display area.
+[ ] Add separate loading and error message areas.
+[ ] Link style.css and script.js correctly.
+[ ] Use semantic HTML elements where appropriate.
+
+B. JavaScript Error Handling
+[ ] Use try...catch to handle errors in asynchronous code.
+[ ] Use throw new Error() to create custom errors where appropriate.
+[ ] Use finally for cleanup after a request or operation.
+[ ] Check whether the amount is empty, numeric, and greater than zero.
+[ ] Check whether the selected currencies are valid.
+[ ] Display helpful error messages instead of failing silently.
+[ ] Do not show technical stack traces to users.
+
+C. Fetch API & API Response Handling
+[ ] Use a public exchange-rate API. Suggested endpoint: https://open.er-api.com/v6/latest/USD
+[ ] Use fetch() with async/await to request exchange-rate data.
+[ ] Check response.ok before processing the response.
+[ ] Convert the response into JSON using response.json().
+[ ] Check that the expected rate data exists.
+[ ] Handle network failures and invalid API responses.
+[ ] Display a loading message while fetching data.
+[ ] Hide the loading message after success or failure.
+[ ] Avoid unnecessary repeated requests for the same rates.
+
+D. Validation & Conversion Logic
+[ ] Create a validateAmount() function.
+[ ] Create a getExchangeRates() function.
+[ ] Create a convertCurrency() function.
+[ ] Create a displayResult() function.
+[ ] Convert the entered amount into a number before calculation.
+[ ] Use source and target currency rates correctly.
+[ ] Display the converted amount with sensible decimal places.
+[ ] Handle a currency missing from the API response.
+[ ] Explain the conversion formula in README.txt.
+
+E. Debugging & Developer Tools
+[ ] Use console.log() to inspect values while developing.
+[ ] Use console.error() when reporting caught errors during development.
+[ ] Inspect the Console tab in browser developer tools.
+[ ] Use the Network tab to inspect the API request and response.
+[ ] Identify and fix at least two intentionally introduced errors during development.
+[ ] Remove unnecessary debugging logs before submission.
+[ ] Confirm there are no uncaught browser console errors.
+
+F. Styling & Usability
+[ ] Create a clean, readable converter layout.
+[ ] Style inputs, dropdowns, and buttons consistently.
+[ ] Display the result clearly.
+[ ] Make loading and error messages visually distinct.
+[ ] Make the converter responsive on mobile screens.
+[ ] Add visible keyboard focus styles.
+[ ] Disable the Convert button while a request is in progress.
+[ ] Do not use Bootstrap, Tailwind, React, or other frameworks.
+
+G. Code Quality & Documentation
+[ ] Keep HTML, CSS, and JavaScript in separate files.
+[ ] Use meaningful variable and function names.
+[ ] Break code into small reusable functions.
+[ ] Avoid unnecessary repeated code.
+[ ] Add comments for important logic.
+[ ] Include README.txt explaining the API, conversion formula, validation, error handling, and how to run the project.
+
+3. REQUIRED FILE STRUCTURE
+
+day21-currency-converter/
+|-- index.html
+|-- style.css
+|-- script.js
+|-- README.txt
+
+4. RULES
+1. Use vanilla JavaScript only.
+2. Use the suggested public exchange-rate API or another documented public exchange-rate API.
+3. Do not hardcode exchange rates as the main source of conversion data.
+4. Validate user input before performing a conversion.
+5. Handle network errors, invalid responses, and missing currency rates.
+6. Do not use React, jQuery, Bootstrap, Tailwind, or other frameworks.
+7. Do not expose API keys or sensitive information.
+8. Write and understand the code yourself.
+9. Do not leave uncaught browser console errors.
+
+5. BONUS CHALLENGE
+[ ] Add a Swap Currencies button.
+[ ] Add a list of recently used conversions.
+[ ] Add a Reset button to clear the amount and result.
+[ ] Show the last updated time if the API provides it.
+[ ] Cache the latest rates in memory to avoid repeated requests during the same page session.
+
