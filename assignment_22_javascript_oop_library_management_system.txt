@@ -1,0 +1,87 @@
+JavaScript Object-Oriented Programming — Classes, Objects, Constructors & Inheritance
+
+PROJECT: Library Management System
+
+Build an interactive Library Management System using JavaScript. Users should be able to add books, view the collection, issue books, and return issued books. Organize the application logic using JavaScript classes and objects.
+
+A. CLASS AND OBJECT FUNDAMENTALS
+[ ] Create a `Book` class.
+[ ] Add a constructor that accepts book ID, title, author, category, and availability status.
+[ ] Create methods to display book information and check whether a book is available.
+[ ] Create at least five Book objects using the class.
+[ ] Display the books dynamically on the webpage.
+
+B. LIBRARY MANAGEMENT CLASS
+[ ] Create a `Library` class to manage the collection of books.
+[ ] Store book objects in an array inside the Library class.
+[ ] Add a method to add a new book to the collection.
+[ ] Add a method to find a book using its ID.
+[ ] Add a method to remove a book using its ID.
+[ ] Add a method to display all books.
+
+C. ISSUE AND RETURN FUNCTIONALITY
+[ ] Add an Issue Book action for each available book.
+[ ] When a book is issued, update its availability status.
+[ ] Prevent users from issuing a book that is already issued.
+[ ] Add a Return Book action for issued books.
+[ ] When a book is returned, update its availability status.
+[ ] Show a clear message after every successful or unsuccessful action.
+
+D. INHERITANCE AND ENCAPSULATION
+[ ] Create a `User` class with user ID, name, and email.
+[ ] Create a `Student` class that extends the `User` class.
+[ ] Use `super()` to call the parent constructor.
+[ ] Add a method in Student to display student information.
+[ ] Use private class fields (such as `#books`) in at least one class.
+[ ] Provide public methods to access or update private data safely.
+
+E. USER INTERFACE AND DOM
+[ ] Create a clean page with a heading and short description.
+[ ] Add a form to enter a book's title, author, and category.
+[ ] Add a section to display all books.
+[ ] Display each book's title, author, category, and availability.
+[ ] Add buttons for issuing and returning books.
+[ ] Add a search input to find books by title or author.
+[ ] Show an appropriate empty state when no books match the search.
+[ ] Make the layout responsive for mobile and desktop screens.
+
+F. CODE ORGANIZATION
+[ ] Keep JavaScript classes and application logic organized.
+[ ] Use meaningful class, method, and variable names.
+[ ] Separate HTML, CSS, and JavaScript into their own files.
+[ ] Add comments to explain important class methods and logic.
+[ ] Avoid writing the entire application inside one large function.
+
+3. REQUIRED FILE STRUCTURE
+
+library-management-system/
+│
+├── index.html
+├── css/
+│   └── style.css
+└── js/
+    ├── Book.js
+    ├── User.js
+    ├── Library.js
+    └── app.js
+
+4. RULES
+
+1. Use JavaScript classes to represent books, users, and the library.
+2. Use constructors to initialize object properties.
+3. Demonstrate object creation and method usage.
+4. Use inheritance with `extends` and `super()`.
+5. Use at least one private class field.
+6. Do not hardcode the displayed book cards directly in HTML.
+7. Update the interface dynamically using DOM manipulation.
+8. Validate form inputs before adding a book.
+9. Use event listeners for all user interactions.
+10. Do not use a frontend framework or library for this assignment.
+11. Test adding, searching, issuing, and returning books.
+
+5. BONUS CHALLENGE
+
+[ ] Add a maximum issue limit of three books per student.
+[ ] Display the number of available and issued books.
+[ ] Add a book category filter.
+[ ] Store the book collection in localStorage so it remains available after refreshing the page.
