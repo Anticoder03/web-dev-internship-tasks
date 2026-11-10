@@ -1,0 +1,90 @@
+JavaScript Asynchronous Programming — Callbacks, Promises, Async/Await & API Integration
+
+PROJECT: Weather Dashboard
+
+Build a Weather Dashboard that retrieves weather information from a public weather API and displays it in a clean, responsive interface. Demonstrate how JavaScript handles asynchronous operations.
+
+A. CALLBACKS AND ASYNCHRONOUS CONCEPTS
+[ ] Understand the difference between synchronous and asynchronous code.
+[ ] Write a simple function that accepts another function as a callback.
+[ ] Use `setTimeout()` to demonstrate asynchronous execution.
+[ ] Explain the order in which synchronous and asynchronous statements execute.
+[ ] Add comments describing where asynchronous operations are used.
+
+B. PROMISES
+[ ] Create a Promise that resolves when a sample operation succeeds.
+[ ] Create a Promise that rejects when a sample operation fails.
+[ ] Handle Promise results using `.then()`.
+[ ] Handle errors using `.catch()`.
+[ ] Use `.finally()` after a Promise settles.
+[ ] Demonstrate Promise chaining with at least two operations.
+
+C. ASYNC AND AWAIT
+[ ] Create an `async` function to retrieve weather data.
+[ ] Use `await` to wait for the API response.
+[ ] Use `try...catch` to handle errors.
+[ ] Display a loading message while the API request is in progress.
+[ ] Display a useful error message if the request fails.
+[ ] Prevent duplicate requests while a request is already running.
+
+D. FETCH API INTEGRATION
+[ ] Choose a public weather API that provides current weather data.
+[ ] Read the API documentation before using its endpoint.
+[ ] Obtain an API key if the chosen service requires one.
+[ ] Use `fetch()` to request weather data for a city.
+[ ] Convert the response into JSON using `.json()`.
+[ ] Display the city name, temperature, weather condition, humidity, and wind speed.
+[ ] Check the response status and handle unsuccessful HTTP responses.
+[ ] Keep API request logic in a separate function.
+
+E. WEATHER DASHBOARD INTERFACE
+[ ] Create a heading and short description for the dashboard.
+[ ] Add a city search input and Search button.
+[ ] Display the current city and country.
+[ ] Display the temperature and weather condition.
+[ ] Display humidity and wind speed.
+[ ] Show a suitable weather icon if the API provides one.
+[ ] Show a loading state while fetching data.
+[ ] Show a clear message when the city is not found.
+[ ] Make the dashboard responsive for mobile and desktop screens.
+
+F. CODE QUALITY AND TESTING
+[ ] Separate HTML, CSS, and JavaScript into their own files.
+[ ] Use meaningful function and variable names.
+[ ] Avoid repeating API request logic.
+[ ] Do not hardcode weather results in the interface.
+[ ] Test multiple valid city names.
+[ ] Test invalid city names and network/API errors.
+[ ] Do not expose private API keys in a public repository.
+
+3. REQUIRED FILE STRUCTURE
+
+weather-dashboard/
+│
+├── index.html
+├── css/
+│   └── style.css
+└── js/
+    ├── api.js
+    └── app.js
+
+4. RULES
+
+1. Use JavaScript Promises and async/await in the project.
+2. Use `fetch()` to retrieve real data from the selected API.
+3. Use `try...catch` for error handling.
+4. Display loading, success, and error states clearly.
+5. Validate the city input before making an API request.
+6. Update the webpage dynamically using DOM manipulation.
+7. Do not use a frontend framework or library.
+8. Do not submit a project that only displays static or hardcoded weather information.
+9. Keep API-related code separate from UI event handling.
+10. Test the project before submitting it.
+
+5. BONUS CHALLENGE
+
+[ ] Add a button to detect the user's location using the browser Geolocation API.
+[ ] Display a five-day forecast if the selected API supports it.
+[ ] Add a Celsius/Fahrenheit toggle.
+[ ] Save recently searched cities and allow users to select them again.
+[ ] Add a refresh button to retrieve the latest weather data.
