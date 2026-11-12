@@ -1,0 +1,102 @@
+JavaScript Modules & Third-Party Libraries — ES Modules, npm & Chart.js
+
+PROJECT: Personal Expense Tracker Dashboard
+
+Build a Personal Expense Tracker Dashboard that allows users to record income and expenses, organize transactions by category, and view spending summaries through charts. Organize the JavaScript code into reusable modules and use Chart.js to visualize the data.
+
+A. JAVASCRIPT ES MODULES
+[ ] Understand why JavaScript modules are useful for organizing larger applications.
+[ ] Use `export` to expose functions or classes from a JavaScript file.
+[ ] Use named exports and named imports.
+[ ] Use a default export and import it in another file.
+[ ] Create separate modules for transaction data, calculations, and UI handling.
+[ ] Load the main JavaScript file using `<script type="module">`.
+[ ] Use relative import paths correctly.
+
+B. TRANSACTION MANAGEMENT
+[ ] Create a transaction module that manages income and expense records.
+[ ] Each transaction should contain an ID, title, amount, type, category, and date.
+[ ] Add a function to create a new transaction.
+[ ] Add a function to return all transactions.
+[ ] Add a function to delete a transaction by ID.
+[ ] Add a function to calculate total income.
+[ ] Add a function to calculate total expenses.
+[ ] Add a function to calculate the current balance.
+[ ] Keep calculation logic separate from DOM manipulation.
+
+C. EXPENSE TRACKER INTERFACE
+[ ] Create a dashboard heading and short description.
+[ ] Add a form to enter transaction title and amount.
+[ ] Add a selection for Income or Expense.
+[ ] Add a category selection (such as Food, Travel, Shopping, Bills, Salary, and Other).
+[ ] Add a date input.
+[ ] Display all transactions in a transaction list or table.
+[ ] Add a delete button for each transaction.
+[ ] Display total income, total expenses, and current balance.
+[ ] Validate all form fields before saving a transaction.
+[ ] Show a message when the transaction list is empty.
+
+D. CHART.JS INTEGRATION
+[ ] Install Chart.js using npm.
+[ ] Set up a project using npm and create a `package.json` file.
+[ ] Create a doughnut chart showing expenses by category.
+[ ] Create a bar chart comparing total income and total expenses.
+[ ] Update chart data when a transaction is added or deleted.
+[ ] Add meaningful chart titles and labels.
+[ ] Ensure charts remain readable on smaller screens.
+
+E. LOCAL STORAGE AND DATA PERSISTENCE
+[ ] Save transactions in localStorage.
+[ ] Load saved transactions when the application starts.
+[ ] Update localStorage whenever a transaction is added or deleted.
+[ ] Handle the case where localStorage has no saved data.
+[ ] Use `JSON.stringify()` and `JSON.parse()` correctly.
+[ ] Ensure dashboard totals and charts are calculated from saved transaction data.
+
+F. CODE ORGANIZATION AND TESTING
+[ ] Keep HTML, CSS, and JavaScript in separate files.
+[ ] Organize JavaScript into reusable modules.
+[ ] Use clear and consistent naming conventions.
+[ ] Avoid repeating the same calculation logic.
+[ ] Handle invalid amounts and missing form values.
+[ ] Test adding income and expense transactions.
+[ ] Test deleting transactions and refreshing the page.
+[ ] Test whether charts update correctly after data changes.
+
+3. REQUIRED FILE STRUCTURE
+
+expense-tracker/
+│
+├── index.html
+├── package.json
+├── css/
+│   └── style.css
+└── js/
+    ├── app.js
+    ├── transactions.js
+    ├── calculations.js
+    ├── storage.js
+    └── charts.js
+
+4. RULES
+
+1. Use ES modules with `import` and `export`.
+2. Use separate modules for different responsibilities.
+3. Use npm to initialize the project and install Chart.js.
+4. Use Chart.js for both required charts.
+5. Use localStorage to persist transaction data.
+6. Generate transaction elements dynamically using JavaScript.
+7. Do not hardcode dashboard totals or chart values.
+8. Validate user input before updating the transaction list.
+9. Keep calculation, storage, chart, and UI logic separate.
+10. Do not use a frontend framework or CSS framework.
+11. Test all major features before submitting the project.
+
+5. BONUS CHALLENGE
+
+[ ] Add a date-range filter for transactions.
+[ ] Add a category filter.
+[ ] Add an edit transaction feature.
+[ ] Add a monthly expense summary.
+[ ] Add a button to export transactions as a CSV file.
+[ ] Add a dark mode toggle.
