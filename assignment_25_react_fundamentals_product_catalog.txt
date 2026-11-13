@@ -1,0 +1,100 @@
+React Fundamentals — Vite, JSX, Components, Props & State
+
+PROJECT: React Product Catalog
+
+Build a Product Catalog application using React. Display products, allow users to search and filter them, and provide a simple cart counter. Focus on React fundamentals and component-based development.
+
+A. REACT PROJECT SETUP
+[ ] Understand what React is and why component-based development is useful.
+[ ] Create a React project using Vite.
+[ ] Explore `package.json`, the `src` folder, and the default project structure.
+[ ] Run the development server using npm.
+[ ] Remove unnecessary starter code and prepare the project.
+
+B. JSX AND COMPONENTS
+[ ] Understand JSX and how it differs from regular HTML.
+[ ] Create reusable `Header`, `ProductCard`, `ProductList`, `SearchBar`, `CategoryFilter`, and `Footer` components.
+[ ] Import and use components inside `App.jsx`.
+[ ] Use `className` instead of the HTML `class` attribute.
+[ ] Display JavaScript expressions inside JSX using curly braces.
+
+C. PROPS AND REUSABLE COMPONENTS
+[ ] Pass product information from `ProductList` to `ProductCard` using props.
+[ ] Display each product's name, price, category, and image.
+[ ] Pass values such as title and description to reusable components.
+[ ] Pass a function as a prop to a child component.
+[ ] Use default values where appropriate.
+[ ] Avoid duplicating product card markup.
+
+D. STATE AND EVENT HANDLING
+[ ] Import and use the `useState` Hook.
+[ ] Store the product list in React state.
+[ ] Add a controlled search input using state and `onChange`.
+[ ] Add a category filter and store the selected category in state.
+[ ] Add an Add to Cart button to each product card.
+[ ] Store the cart item count in state.
+[ ] Update the cart count when a product is added.
+[ ] Use event handlers such as `onClick` and `onChange`.
+[ ] Understand why React state should be updated instead of directly changing the DOM.
+
+E. LISTS AND CONDITIONAL RENDERING
+[ ] Render product cards using the `map()` method.
+[ ] Assign a unique `key` to every rendered product.
+[ ] Filter products based on the search input.
+[ ] Filter products based on the selected category.
+[ ] Display a message when no products match the filters.
+[ ] Show a cart badge with the current item count.
+[ ] Use conditional rendering to display different UI states.
+
+F. DESIGN AND RESPONSIVENESS
+[ ] Create a clean product catalog layout.
+[ ] Style the header, search bar, filters, and product cards with CSS.
+[ ] Display product cards in a responsive grid.
+[ ] Add consistent spacing, typography, and button styles.
+[ ] Add hover and focus states for interactive elements.
+[ ] Ensure the application works on mobile and desktop screens.
+
+3. REQUIRED FILE STRUCTURE
+
+react-product-catalog/
+│
+├── index.html
+├── package.json
+└── src/
+    ├── main.jsx
+    ├── App.jsx
+    ├── components/
+    │   ├── Header.jsx
+    │   ├── SearchBar.jsx
+    │   ├── CategoryFilter.jsx
+    │   ├── ProductList.jsx
+    │   ├── ProductCard.jsx
+    │   └── Footer.jsx
+    ├── data/
+    │   └── products.js
+    └── styles/
+        └── style.css
+
+4. RULES
+
+1. Build the application using React with Vite.
+2. Use functional components.
+3. Use JSX for component layouts.
+4. Pass data between components using props.
+5. Use `useState` to manage changing data.
+6. Use event handlers for user interactions.
+7. Render product lists using `map()` and provide unique keys.
+8. Do not manipulate the DOM directly to update React UI.
+9. Keep components small and focused on a single responsibility.
+10. Do not use Bootstrap, Tailwind CSS, or other UI frameworks.
+11. Do not use a backend or external API; use local product data.
+12. Test search, filtering, and cart count functionality.
+
+5. BONUS CHALLENGE
+
+[ ] Add a product details modal that opens when a product is selected.
+[ ] Add a Remove from Cart button.
+[ ] Display the number of unique products in the cart.
+[ ] Add sorting by price (low to high and high to low).
+[ ] Add a clear filters button.
+[ ] Save the cart in localStorage and restore it after reloading.
