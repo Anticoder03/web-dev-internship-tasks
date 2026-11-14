@@ -1,0 +1,104 @@
+React Hooks & API Integration — useEffect, Fetch API, Loading & Error States
+
+PROJECT: React User Directory
+
+Build a React User Directory application that retrieves user information from a public API and displays it in a responsive interface. Users should be able to search, filter, and view details for each user. Focus on understanding useEffect, API requests, and how React handles side effects.
+
+A. UNDERSTANDING useEffect
+[ ] Understand what the useEffect Hook does.
+[ ] Import and use useEffect in a functional component.
+[ ] Run an effect when a component first renders using an empty dependency array.
+[ ] Create an effect that runs when a state value changes.
+[ ] Understand the purpose of the dependency array.
+[ ] Add a cleanup function to an effect and understand when it runs.
+[ ] Avoid unnecessary effects when a value can be calculated directly during rendering.
+
+B. FETCHING DATA FROM AN API
+[ ] Choose a public API that provides user information.
+[ ] Read the API documentation and identify the endpoint to retrieve users.
+[ ] Use fetch() inside an asynchronous function.
+[ ] Call the asynchronous function from useEffect.
+[ ] Convert the API response into JSON.
+[ ] Store retrieved users in React state using useState.
+[ ] Display each user's name, email, phone number, and city.
+[ ] Keep API request logic organized in a separate function or file.
+
+C. LOADING, ERROR AND EMPTY STATES
+[ ] Create a loading state using useState.
+[ ] Display a loading message or indicator while data is being retrieved.
+[ ] Create an error state to store API or network errors.
+[ ] Use try...catch...finally to handle the request lifecycle.
+[ ] Check the response status before processing response data.
+[ ] Display a useful error message if the request fails.
+[ ] Provide a Retry button to request the data again.
+[ ] Display an appropriate message if the API returns an empty user list.
+
+D. SEARCH AND FILTER FUNCTIONALITY
+[ ] Add a search input to find users by name.
+[ ] Make the search input a controlled component.
+[ ] Filter users dynamically as the user types.
+[ ] Add a filter to show users by city.
+[ ] Add a clear filters button.
+[ ] Display the number of users currently shown.
+[ ] Show an empty-result message when no users match the filters.
+
+E. USER DETAILS
+[ ] Create a reusable UserCard component.
+[ ] Pass user information to UserCard using props.
+[ ] Add a View Details button to each user card.
+[ ] Display additional user information in a details section or modal.
+[ ] Pass the selected user to the details component using props.
+[ ] Add a Close button if using a modal.
+[ ] Use conditional rendering to show and hide the details view.
+
+F. COMPONENT STRUCTURE AND DESIGN
+[ ] Create reusable components for Header, SearchBar, UserList, UserCard, and UserDetails.
+[ ] Keep API logic separate from presentation components.
+[ ] Render user cards using map() with a unique key.
+[ ] Create a responsive grid layout for user cards.
+[ ] Add clear visual styles for loading, errors, and empty states.
+[ ] Ensure the application works on mobile and desktop screens.
+
+3. REQUIRED FILE STRUCTURE
+
+react-user-directory/
+│
+├── index.html
+├── package.json
+└── src/
+    ├── main.jsx
+    ├── App.jsx
+    ├── components/
+    │   ├── Header.jsx
+    │   ├── SearchBar.jsx
+    │   ├── UserList.jsx
+    │   ├── UserCard.jsx
+    │   └── UserDetails.jsx
+    ├── services/
+    │   └── userApi.js
+    └── styles/
+        └── style.css
+
+4. RULES
+
+1. Build the application using React with Vite.
+2. Use functional components and React Hooks.
+3. Use useEffect for the API request side effect.
+4. Use useState for users, loading, errors, search, filters, and selected user.
+5. Do not fetch API data directly inside the component body.
+6. Handle loading, error, success, and empty states.
+7. Use try...catch and check HTTP response status.
+8. Render lists with map() and unique keys.
+9. Use props to pass data between components.
+10. Do not manipulate the DOM directly.
+11. Do not use a frontend framework other than React or a UI component library.
+12. Test the application with successful requests, failed requests, searches, and filters.
+
+5. BONUS CHALLENGE
+
+[ ] Add pagination to display a limited number of users per page.
+[ ] Add sorting by name in ascending and descending order.
+[ ] Add a refresh button to fetch the latest user list.
+[ ] Use AbortController to cancel an API request when the component is unmounted or a new request replaces it.
+[ ] Add a favorite button and store favorite user IDs in localStorage.
+[ ] Create a separate Favorites view that displays only favorite users.
