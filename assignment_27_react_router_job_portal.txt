@@ -1,0 +1,118 @@
+React Router & Multi-Page Applications — Routing, Navigation, URL Parameters & Protected Routes
+
+PROJECT: React Job Portal
+
+Build a React Job Portal with multiple pages. Users should browse job listings, search and filter jobs, view job details, and navigate without reloading the browser. Focus on client-side routing and organizing a multi-page React application.
+
+A. REACT ROUTER SETUP
+[ ] Understand the difference between traditional page navigation and client-side routing.
+[ ] Install `react-router-dom` using npm.
+[ ] Wrap the application with `BrowserRouter`.
+[ ] Create page components for Home, Jobs, About, Login, and NotFound.
+[ ] Configure routes using `Routes` and `Route`.
+[ ] Create a reusable navigation bar.
+[ ] Use `Link` or `NavLink` for navigation instead of normal page reloads.
+[ ] Highlight the active navigation link using `NavLink`.
+
+B. NESTED ROUTES AND LAYOUTS
+[ ] Create a shared layout component containing the navigation bar and footer.
+[ ] Use `Outlet` to render nested route content.
+[ ] Organize routes under the shared layout.
+[ ] Add a Not Found page for unknown URLs.
+[ ] Add a link on the Not Found page to return Home.
+
+C. JOB LISTING PAGE
+[ ] Create a local dataset containing at least eight job listings.
+[ ] Each job should contain an ID, title, company, location, job type, description, and salary range.
+[ ] Display jobs using a reusable `JobCard` component.
+[ ] Render job cards using `map()` with unique keys.
+[ ] Add search by job title or company.
+[ ] Add filters for job location and job type.
+[ ] Add a clear filters button.
+[ ] Display a message when no jobs match the filters.
+
+D. DYNAMIC ROUTES AND URL PARAMETERS
+[ ] Create a dynamic route such as `/jobs/:jobId`.
+[ ] Use `useParams` to read the job ID from the URL.
+[ ] Display the selected job's full details on a separate page.
+[ ] Add an Apply Now button on the job details page.
+[ ] Display a useful message if the requested job ID does not exist.
+[ ] Add a Back to Jobs link.
+
+E. NAVIGATION AND PROGRAMMATIC ROUTING
+[ ] Use `useNavigate` to navigate after a successful login simulation.
+[ ] Create a Login page with email and password fields.
+[ ] Validate that login fields are not empty.
+[ ] Display a success or error message after form submission.
+[ ] Redirect the user to the Jobs page after successful simulated login.
+[ ] Add a logout action that returns the user to the Login page.
+
+F. PROTECTED ROUTES
+[ ] Create a simple authentication state using React state or Context.
+[ ] Create a reusable `ProtectedRoute` component.
+[ ] Prevent unauthenticated users from opening the Apply or Dashboard page.
+[ ] Redirect unauthenticated users to the Login page.
+[ ] Allow authenticated users to access the protected page.
+[ ] Display a simple application dashboard for authenticated users.
+[ ] Understand that frontend-only route protection is not real server-side security.
+
+G. DESIGN AND RESPONSIVENESS
+[ ] Create a professional job portal header and navigation menu.
+[ ] Design a responsive job listing grid or list.
+[ ] Style job cards, filters, forms, and detail pages consistently.
+[ ] Add hover and focus states to interactive elements.
+[ ] Ensure the application works on mobile and desktop screens.
+
+3. REQUIRED FILE STRUCTURE
+
+react-job-portal/
+│
+├── index.html
+├── package.json
+└── src/
+    ├── main.jsx
+    ├── App.jsx
+    ├── components/
+    │   ├── Navbar.jsx
+    │   ├── Footer.jsx
+    │   ├── JobCard.jsx
+    │   └── ProtectedRoute.jsx
+    ├── layouts/
+    │   └── MainLayout.jsx
+    ├── pages/
+    │   ├── Home.jsx
+    │   ├── Jobs.jsx
+    │   ├── JobDetails.jsx
+    │   ├── About.jsx
+    │   ├── Login.jsx
+    │   ├── Dashboard.jsx
+    │   └── NotFound.jsx
+    ├── data/
+    │   └── jobs.js
+    └── styles/
+        └── style.css
+
+4. RULES
+
+1. Build the application using React with Vite.
+2. Use `react-router-dom` for all application routing.
+3. Use `BrowserRouter`, `Routes`, and `Route`.
+4. Use `Link` or `NavLink` for internal navigation.
+5. Use `useParams` for dynamic job detail routes.
+6. Use `useNavigate` for programmatic navigation.
+7. Use `Outlet` for nested routes and shared layouts.
+8. Use reusable components wherever appropriate.
+9. Handle unknown routes with a Not Found page.
+10. Do not reload the entire page during internal navigation.
+11. Use local job data; a backend or external API is not required.
+12. Do not use a UI framework or component library.
+13. Test direct URL access, navigation, invalid job IDs, and protected routes.
+
+5. BONUS CHALLENGE
+
+[ ] Add a Favorites page where users can save interesting jobs.
+[ ] Persist favorite job IDs in localStorage.
+[ ] Add pagination to the Jobs page.
+[ ] Add a job application form with basic validation.
+[ ] Add a breadcrumb navigation component.
+[ ] Use lazy loading with `React.lazy()` and `Suspense` for page components.
