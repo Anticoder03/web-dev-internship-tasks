@@ -1,0 +1,113 @@
+React Context API & State Management — useContext, useReducer & Global State
+
+PROJECT: React Shopping Cart Application
+
+Build a React Shopping Cart application where users can browse products, add items to a cart, update quantities, remove products, and view the order total. Use Context API and useReducer to manage shared application state across multiple components.
+
+A. CONTEXT API FUNDAMENTALS
+[ ] Understand the problem of prop drilling in React.
+[ ] Understand how Context API helps share data across components.
+[ ] Create a CartContext using createContext().
+[ ] Create a CartProvider component.
+[ ] Wrap the application with CartProvider.
+[ ] Use useContext() to access shared cart data.
+[ ] Access cart state from different components without passing props through every intermediate component.
+
+B. REDUCER AND STATE MANAGEMENT
+[ ] Understand the purpose of the useReducer() Hook.
+[ ] Create a reducer function to manage cart actions.
+[ ] Initialize cart state using useReducer().
+[ ] Handle an action to add a product to the cart.
+[ ] Handle an action to remove a product from the cart.
+[ ] Handle actions to increase and decrease item quantities.
+[ ] Handle an action to clear the entire cart.
+[ ] Use action types and payloads consistently.
+[ ] Keep reducer logic separate from UI components.
+
+C. PRODUCT CATALOG
+[ ] Create a local dataset containing at least eight products.
+[ ] Each product should contain an ID, name, description, price, category, and image.
+[ ] Create a reusable ProductCard component.
+[ ] Display products in a responsive grid.
+[ ] Add an Add to Cart button to every product card.
+[ ] Show a clear message when the product list is empty.
+[ ] Prevent duplicate cart entries by increasing the existing item's quantity.
+
+D. SHOPPING CART FUNCTIONALITY
+[ ] Create a Cart page or cart section.
+[ ] Display each cart item's name, price, image, and quantity.
+[ ] Add buttons to increase and decrease item quantities.
+[ ] Add a Remove button for each cart item.
+[ ] Remove an item when its quantity reaches zero, or prevent decreasing below one.
+[ ] Display the number of items in the cart in the navigation bar.
+[ ] Calculate the subtotal dynamically.
+[ ] Display the total number of units and total price.
+[ ] Add a Clear Cart button.
+[ ] Display an empty-cart message when no products have been added.
+
+E. CONTEXT PROVIDER AND COMPONENT COMMUNICATION
+[ ] Keep cart state and cart actions inside the CartProvider.
+[ ] Expose cart data and action methods through the Context value.
+[ ] Use useContext() in ProductCard to add products.
+[ ] Use useContext() in the Navbar to display the cart count.
+[ ] Use useContext() in the Cart page to display and update cart items.
+[ ] Avoid unnecessary prop drilling for shared cart data.
+[ ] Keep components focused on their own responsibilities.
+
+F. PERSISTENCE AND USER EXPERIENCE
+[ ] Save cart data in localStorage whenever the cart changes.
+[ ] Load previously saved cart data when the application starts.
+[ ] Handle missing or invalid saved data safely.
+[ ] Add a confirmation message when an item is added or removed.
+[ ] Disable or hide quantity controls when an action is not valid.
+[ ] Make the application responsive for mobile and desktop screens.
+
+3. REQUIRED FILE STRUCTURE
+
+react-shopping-cart/
+│
+├── index.html
+├── package.json
+└── src/
+    ├── main.jsx
+    ├── App.jsx
+    ├── components/
+    │   ├── Navbar.jsx
+    │   ├── ProductCard.jsx
+    │   ├── ProductList.jsx
+    │   └── CartItem.jsx
+    ├── context/
+    │   └── CartContext.jsx
+    ├── reducers/
+    │   └── cartReducer.js
+    ├── data/
+    │   └── products.js
+    ├── pages/
+    │   ├── Home.jsx
+    │   └── Cart.jsx
+    └── styles/
+        └── style.css
+
+4. RULES
+
+1. Build the application using React with Vite.
+2. Use Context API to share cart state across components.
+3. Use useReducer() to manage cart actions.
+4. Use useContext() to consume shared cart data and actions.
+5. Keep reducer logic separate from UI components.
+6. Do not directly mutate the existing state or cart array.
+7. Use unique product IDs to identify cart items.
+8. Calculate cart totals from the current cart state; do not hardcode totals.
+9. Use localStorage to persist the cart between page reloads.
+10. Use reusable functional components.
+11. Do not use Redux, Zustand, or another state-management library.
+12. Test adding, removing, updating quantities, clearing the cart, and refreshing the page.
+
+5. BONUS CHALLENGE
+
+[ ] Add a product search and category filter.
+[ ] Add a product details page using React Router.
+[ ] Add a checkout form with basic validation.
+[ ] Calculate tax and delivery charges in the order summary.
+[ ] Add a discount coupon field with a simple predefined coupon code.
+[ ] Display a confirmation page after a simulated successful checkout.
