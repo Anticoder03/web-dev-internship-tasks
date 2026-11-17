@@ -1,0 +1,115 @@
+React Forms & Validation — Controlled Inputs, React Hook Form & Form Handling
+
+PROJECT: React Job Application Portal
+
+Build a React Job Application Portal where applicants can view a sample job listing, complete an application form, upload a resume, and review their submitted application. Focus on form handling, validation, and a good user experience.
+
+A. REACT FORM FUNDAMENTALS
+[ ] Understand controlled and uncontrolled form inputs.
+[ ] Create a reusable form component using functional components.
+[ ] Use useState to manage form values.
+[ ] Connect inputs to state using value and onChange.
+[ ] Handle form submission using onSubmit.
+[ ] Prevent the browser's default form submission behavior.
+[ ] Reset form values after a successful submission.
+[ ] Use appropriate input types for text, email, telephone, date, and file fields.
+
+B. APPLICATION FORM
+[ ] Display a sample job title, company name, and job description.
+[ ] Create fields for applicant's full name, email, and phone number.
+[ ] Add education and skills fields.
+[ ] Add a cover letter textarea.
+[ ] Add a resume upload field that accepts PDF files.
+[ ] Add a checkbox to confirm that the information is correct.
+[ ] Add a Submit Application button.
+[ ] Show a review of the entered details before final submission.
+
+C. FORM VALIDATION
+[ ] Make required fields mandatory.
+[ ] Validate that the applicant's name is not empty.
+[ ] Validate the email format.
+[ ] Validate the phone number format.
+[ ] Ensure the cover letter is not empty and meets a reasonable minimum length.
+[ ] Validate that a resume file has been selected.
+[ ] Check that the resume is a PDF and is within a reasonable file-size limit.
+[ ] Require the confirmation checkbox before submission.
+[ ] Display clear validation messages near relevant fields.
+[ ] Prevent submission when validation fails.
+[ ] Update validation messages when the user corrects an input.
+
+D. REACT HOOK FORM
+[ ] Install `react-hook-form` using npm.
+[ ] Create a second version of the application form using React Hook Form.
+[ ] Use `useForm()` to manage the form.
+[ ] Register inputs using `register()`.
+[ ] Add validation rules such as required, minLength, and pattern.
+[ ] Display validation messages using the `errors` object.
+[ ] Handle valid submissions using `handleSubmit()`.
+[ ] Reset the form using the provided reset method after successful submission.
+[ ] Compare the code required by the useState approach and React Hook Form.
+
+E. SUBMISSION REVIEW AND SUCCESS STATE
+[ ] Display a review screen containing the applicant's entered information.
+[ ] Add an Edit button to return to the form.
+[ ] Add a final confirmation action.
+[ ] Display a success message after submission.
+[ ] Generate a unique application reference ID on the frontend.
+[ ] Store submitted application details in localStorage.
+[ ] Display previously submitted applications on a simple Applications page.
+[ ] Handle the case where there are no saved applications.
+
+F. COMPONENT STRUCTURE AND DESIGN
+[ ] Create reusable components for JobInfo, ApplicationForm, FormField, ApplicationReview, and SuccessMessage.
+[ ] Keep validation logic organized and avoid unnecessary repetition.
+[ ] Use clear labels and helpful placeholder text.
+[ ] Make the form accessible using labels and appropriate input attributes.
+[ ] Show clear focus and error states.
+[ ] Make the application responsive for mobile and desktop screens.
+
+3. REQUIRED FILE STRUCTURE
+
+react-job-application/
+│
+├── index.html
+├── package.json
+└── src/
+    ├── main.jsx
+    ├── App.jsx
+    ├── components/
+    │   ├── JobInfo.jsx
+    │   ├── ApplicationForm.jsx
+    │   ├── FormField.jsx
+    │   ├── ApplicationReview.jsx
+    │   └── SuccessMessage.jsx
+    ├── pages/
+    │   └── Applications.jsx
+    ├── hooks/
+    │   └── useApplications.js
+    ├── utils/
+    │   └── validation.js
+    └── styles/
+        └── style.css
+
+4. RULES
+
+1. Build the application using React with Vite.
+2. First create a form using controlled inputs and useState.
+3. Then create a second form using React Hook Form.
+4. Use proper validation for all required fields.
+5. Display useful validation messages near relevant inputs.
+6. Do not rely only on HTML validation attributes; implement React-side validation too.
+7. Do not upload the resume to a real server; validate and preview the selected file locally.
+8. Do not store the actual resume file in localStorage. Store only application details and the file name.
+9. Keep form, validation, and application storage logic organized.
+10. Use reusable functional components.
+11. Do not use a backend or external API for this assignment.
+12. Test valid submissions, invalid inputs, file validation, editing, and page refresh behavior.
+
+5. BONUS CHALLENGE
+
+[ ] Add a multi-step application form.
+[ ] Display a progress indicator for each step.
+[ ] Add a character counter for the cover letter.
+[ ] Allow applicants to remove and select a different resume before submitting.
+[ ] Add a filter to the Applications page by job title.
+[ ] Export submitted application details as a JSON file.
