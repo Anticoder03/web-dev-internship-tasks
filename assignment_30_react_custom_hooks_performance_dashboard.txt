@@ -1,0 +1,120 @@
+React Custom Hooks & Code Reusability — useMemo, useCallback & Performance Optimization
+
+PROJECT: React Product Analytics Dashboard
+
+Build a React Product Analytics Dashboard that displays product data, calculates summary statistics, and allows users to search, filter, sort, and manage products. Focus on creating reusable custom Hooks and understanding how to optimize React components.
+
+A. CUSTOM HOOK FUNDAMENTALS
+[ ] Understand what a custom Hook is and why it is useful.
+[ ] Learn the naming convention: custom Hooks must start with `use`.
+[ ] Create a `useLocalStorage` custom Hook.
+[ ] Use the Hook to read an initial value from localStorage.
+[ ] Use the Hook to update localStorage when its value changes.
+[ ] Handle missing or invalid stored JSON safely.
+[ ] Create a `useDebounce` custom Hook for a search input.
+[ ] Use the custom Hooks in more than one component where appropriate.
+[ ] Keep custom Hook logic separate from UI components.
+
+B. PRODUCT DATA AND DASHBOARD
+[ ] Create a local dataset containing at least 20 products.
+[ ] Each product should contain an ID, name, category, price, stock quantity, and status.
+[ ] Create reusable components for the dashboard header, summary cards, product table, and filter controls.
+[ ] Display the total number of products.
+[ ] Calculate and display the total inventory value.
+[ ] Display the number of products that are in stock and out of stock.
+[ ] Display the average product price.
+[ ] Calculate all summary values from product data instead of hardcoding them.
+
+C. SEARCH, FILTER AND SORT
+[ ] Add a search input to find products by name.
+[ ] Use the `useDebounce` Hook to delay search filtering until the user stops typing.
+[ ] Add a category filter.
+[ ] Add a stock-status filter.
+[ ] Add sorting by product name.
+[ ] Add sorting by price in ascending and descending order.
+[ ] Add a clear filters button.
+[ ] Display a message when no products match the selected conditions.
+[ ] Keep the original product dataset unchanged when filtering or sorting.
+
+D. useMemo FOR PERFORMANCE
+[ ] Understand what unnecessary recalculation means in React.
+[ ] Use `useMemo()` to calculate filtered and sorted product data.
+[ ] Use `useMemo()` to calculate dashboard summary statistics.
+[ ] Identify which calculations are expensive enough to benefit from memoization.
+[ ] Avoid using `useMemo()` for every simple value without a reason.
+[ ] Verify that displayed results remain correct when search and filters change.
+
+E. useCallback AND React.memo
+[ ] Understand how function references can change between renders.
+[ ] Use `useCallback()` to memoize a product update or delete handler.
+[ ] Wrap an appropriate child component with `React.memo()`.
+[ ] Pass stable callback functions to memoized child components.
+[ ] Use React DevTools Profiler to inspect component rendering if available.
+[ ] Compare component behavior before and after applying memoization.
+[ ] Explain when memoization helps and when it adds unnecessary complexity.
+
+F. PRODUCT MANAGEMENT
+[ ] Add a form to create a new product.
+[ ] Validate product name, category, price, and stock quantity.
+[ ] Add an edit action for existing products.
+[ ] Add a delete action for existing products.
+[ ] Update dashboard statistics after product changes.
+[ ] Persist the product list using the `useLocalStorage` Hook.
+[ ] Restore saved products after refreshing the browser.
+
+G. DESIGN AND CODE ORGANIZATION
+[ ] Create a clean dashboard layout with summary cards and a product table.
+[ ] Add clear visual indicators for stock status.
+[ ] Use reusable components and custom Hooks.
+[ ] Keep data calculations separate from presentation logic.
+[ ] Make the interface responsive for mobile and desktop screens.
+[ ] Add useful empty, success, and validation states.
+
+3. REQUIRED FILE STRUCTURE
+
+react-product-analytics/
+│
+├── index.html
+├── package.json
+└── src/
+    ├── main.jsx
+    ├── App.jsx
+    ├── components/
+    │   ├── DashboardHeader.jsx
+    │   ├── SummaryCards.jsx
+    │   ├── ProductTable.jsx
+    │   ├── ProductForm.jsx
+    │   └── ProductFilters.jsx
+    ├── hooks/
+    │   ├── useLocalStorage.js
+    │   └── useDebounce.js
+    ├── data/
+    │   └── products.js
+    ├── utils/
+    │   └── productCalculations.js
+    └── styles/
+        └── style.css
+
+4. RULES
+
+1. Build the application using React with Vite.
+2. Create and use at least two custom Hooks.
+3. Follow the Rules of Hooks.
+4. Use useMemo for meaningful derived calculations or filtering.
+5. Use useCallback with an appropriate memoized child component.
+6. Do not mutate the original product array or product objects.
+7. Keep product calculations and custom Hook logic separate from UI components.
+8. Use localStorage to persist product data.
+9. Validate all product form inputs.
+10. Do not use Redux, Zustand, or another state-management library.
+11. Do not use a UI component framework.
+12. Test search, filters, sorting, product updates, deletion, and persistence.
+
+5. BONUS CHALLENGE
+
+[ ] Add pagination to the product table.
+[ ] Add a low-stock warning for products with fewer than five units.
+[ ] Add a category-wise inventory summary.
+[ ] Add a button to export the product list as a CSV file.
+[ ] Add a dark mode toggle and persist the selected theme.
+[ ] Use React DevTools Profiler to identify a component that benefits from memoization and document the result.
