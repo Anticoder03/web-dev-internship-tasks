@@ -1,0 +1,117 @@
+React Testing & Debugging — Vitest, React Testing Library & Component Testing
+
+PROJECT: React Task Management Application
+
+Build a React Task Management application and write automated tests for its components and important user interactions. Users should be able to create tasks, mark them as completed, edit task details, delete tasks, search tasks, and filter them by status. The main focus is learning how to test React applications reliably.
+
+A. TESTING FUNDAMENTALS
+[ ] Understand why automated testing is important in frontend development.
+[ ] Understand the difference between unit tests, component tests, and integration tests.
+[ ] Learn the purpose of Vitest.
+[ ] Learn the purpose of React Testing Library.
+[ ] Install Vitest, React Testing Library, and required testing dependencies.
+[ ] Configure the test environment for React components.
+[ ] Add a test script to package.json.
+[ ] Create a simple test to verify that the testing setup works.
+
+B. BUILD THE TASK MANAGEMENT APPLICATION
+[ ] Create a task object structure with ID, title, description, status, and creation date.
+[ ] Create reusable TaskForm, TaskItem, and TaskList components.
+[ ] Create search and status filter controls.
+[ ] Add a form to create a task.
+[ ] Add an action to mark a task as completed or pending.
+[ ] Add an edit action to update a task.
+[ ] Add a delete action to remove a task.
+[ ] Display total, completed, and pending task counts.
+[ ] Save tasks in localStorage and restore them when the application loads.
+
+C. UNIT TESTING
+[ ] Write unit tests for task utility functions.
+[ ] Test the function that creates a task.
+[ ] Test the function that filters tasks by status.
+[ ] Test the function that searches tasks by title.
+[ ] Test the function that calculates completed and pending task counts.
+[ ] Test edge cases such as an empty task list and a task with an empty title.
+[ ] Use clear test descriptions and organize related tests with describe().
+
+D. COMPONENT TESTING WITH REACT TESTING LIBRARY
+[ ] Test that the TaskForm renders correctly.
+[ ] Test that required form fields are displayed.
+[ ] Test that a user can enter a task title and description.
+[ ] Test that submitting the form adds a task.
+[ ] Test that TaskItem displays the correct task information.
+[ ] Test that clicking Complete updates the task status.
+[ ] Test that clicking Delete removes the task.
+[ ] Test that the edit action allows a task to be updated.
+[ ] Use queries such as getByRole, getByLabelText, and getByText.
+[ ] Use userEvent to simulate realistic user interactions.
+
+E. INTEGRATION AND STATE TESTING
+[ ] Test the interaction between TaskForm and TaskList.
+[ ] Test that the task count updates after adding or deleting a task.
+[ ] Test that search returns matching tasks.
+[ ] Test that status filters show the correct tasks.
+[ ] Test that completed tasks remain completed after a page reload.
+[ ] Mock localStorage where appropriate.
+[ ] Test loading saved tasks from localStorage.
+[ ] Test behavior when localStorage contains invalid data.
+
+F. DEBUGGING AND TEST QUALITY
+[ ] Learn how to read and understand a failed test output.
+[ ] Intentionally introduce a small bug and observe which test catches it.
+[ ] Fix the bug and rerun the tests.
+[ ] Use React Testing Library queries that reflect how users interact with the interface.
+[ ] Avoid testing private implementation details.
+[ ] Keep tests independent so one test does not rely on another test's result.
+[ ] Use beforeEach() or cleanup utilities where appropriate.
+[ ] Ensure the complete test suite passes before submission.
+
+3. REQUIRED FILE STRUCTURE
+
+react-task-manager/
+│
+├── index.html
+├── package.json
+├── vite.config.js
+└── src/
+    ├── main.jsx
+    ├── App.jsx
+    ├── components/
+    │   ├── TaskForm.jsx
+    │   ├── TaskItem.jsx
+    │   ├── TaskList.jsx
+    │   └── TaskFilters.jsx
+    ├── utils/
+    │   └── taskUtils.js
+    ├── styles/
+    │   └── style.css
+    └── test/
+        ├── setup.js
+        ├── taskUtils.test.js
+        ├── TaskForm.test.jsx
+        ├── TaskItem.test.jsx
+        └── App.test.jsx
+
+4. RULES
+
+1. Build the application using React with Vite.
+2. Use Vitest as the test runner.
+3. Use React Testing Library to test React components.
+4. Use @testing-library/user-event for user interactions.
+5. Use accessible queries such as getByRole and getByLabelText wherever possible.
+6. Write tests for both successful and unsuccessful cases.
+7. Do not test implementation details such as internal state variables.
+8. Keep unit tests separate from component and integration tests.
+9. Do not use a backend or external API for this assignment.
+10. Do not use snapshots as a replacement for meaningful behavior tests.
+11. Make sure all tests pass before submitting the project.
+12. Include the test command and a short note explaining how to run the test suite.
+
+5. BONUS CHALLENGE
+
+[ ] Add tests for keyboard navigation and form accessibility.
+[ ] Test that invalid form submissions display validation messages.
+[ ] Test that the application handles an empty task list correctly.
+[ ] Add a test for a task with a very long title.
+[ ] Generate a test coverage report using Vitest coverage.
+[ ] Aim for strong coverage of important application behavior, not just a high percentage.
