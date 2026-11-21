@@ -1,0 +1,122 @@
+React TypeScript Fundamentals — Type Safety, Interfaces, Props & State
+
+PROJECT: React Student Management Dashboard
+
+Build a React Student Management Dashboard using TypeScript. Display student records, allow users to add and edit students, search and filter the list, and show basic statistics. Focus on understanding TypeScript in React and using types to make components and application logic safer.
+
+A. TYPESCRIPT PROJECT SETUP
+[ ] Understand the difference between JavaScript and TypeScript.
+[ ] Create a React project using Vite with the TypeScript template.
+[ ] Explore .ts and .tsx file extensions.
+[ ] Understand the purpose of tsconfig.json.
+[ ] Start the development server and verify the project runs.
+[ ] Understand basic types: string, number, boolean, arrays, and objects.
+[ ] Use type annotations for variables and function parameters.
+[ ] Understand optional properties and union types.
+
+B. INTERFACES AND TYPE ALIASES
+[ ] Create a Student interface with ID, name, email, course, and enrollment status.
+[ ] Create a type alias for enrollment status using a union type.
+[ ] Create an interface for form input values.
+[ ] Create an interface for dashboard summary statistics.
+[ ] Understand when to use an interface and when to use a type alias.
+[ ] Use optional properties where a field is not always required.
+[ ] Avoid using any unless there is a clear reason.
+
+C. TYPED REACT COMPONENTS AND PROPS
+[ ] Create reusable components for Header, StudentCard, StudentList, StudentForm, and SummaryCards.
+[ ] Define interfaces or types for component props.
+[ ] Pass student data to StudentCard using typed props.
+[ ] Type callback props for add, edit, and delete actions.
+[ ] Use React.ReactNode for component children when appropriate.
+[ ] Use optional props and default values where needed.
+[ ] Ensure TypeScript reports no prop-related errors.
+
+D. TYPED STATE AND EVENT HANDLING
+[ ] Use useState<Student[]> for the student list.
+[ ] Use appropriate types for selected student and form state.
+[ ] Type input change handlers using React event types.
+[ ] Type form submission handlers correctly.
+[ ] Add a new student using a typed function.
+[ ] Edit an existing student's details.
+[ ] Delete a student using the student's ID.
+[ ] Update state immutably without directly mutating the student array.
+
+E. STUDENT DASHBOARD FEATURES
+[ ] Create a local dataset containing at least eight students.
+[ ] Display each student's name, email, course, and enrollment status.
+[ ] Add a form to create a student.
+[ ] Add an edit action for each student.
+[ ] Add a delete action for each student.
+[ ] Add a search field to find students by name or email.
+[ ] Add a course filter.
+[ ] Add an enrollment-status filter.
+[ ] Display total students and enrollment-status statistics.
+[ ] Display a helpful message when no students match the filters.
+[ ] Validate required form fields and email format.
+
+F. GENERICS AND REUSABLE UTILITIES
+[ ] Understand the purpose of TypeScript generics.
+[ ] Create a generic function that returns an item by ID from an array.
+[ ] Use the generic function with the Student type.
+[ ] Create a reusable typed utility for filtering or sorting records.
+[ ] Understand how generics help reuse logic without losing type information.
+[ ] Add return types to important utility functions.
+
+G. PERSISTENCE AND CODE QUALITY
+[ ] Save student records in localStorage.
+[ ] Parse stored data safely and handle missing or invalid data.
+[ ] Use a typed helper function for reading and writing localStorage data.
+[ ] Keep components, types, and utility functions in separate files.
+[ ] Resolve TypeScript errors instead of hiding them with any or unnecessary type assertions.
+[ ] Make the dashboard responsive for mobile and desktop screens.
+
+3. REQUIRED FILE STRUCTURE
+
+react-student-dashboard/
+│
+├── index.html
+├── package.json
+├── tsconfig.json
+└── src/
+    ├── main.tsx
+    ├── App.tsx
+    ├── types/
+    │   └── student.ts
+    ├── components/
+    │   ├── Header.tsx
+    │   ├── StudentCard.tsx
+    │   ├── StudentList.tsx
+    │   ├── StudentForm.tsx
+    │   └── SummaryCards.tsx
+    ├── data/
+    │   └── students.ts
+    ├── utils/
+    │   ├── studentUtils.ts
+    │   └── storage.ts
+    └── styles/
+        └── style.css
+
+4. RULES
+
+1. Build the application using React with TypeScript and Vite.
+2. Use .tsx for React components and .ts for non-JSX TypeScript files.
+3. Define clear interfaces or type aliases for application data.
+4. Type component props, state, event handlers, and important functions.
+5. Use useState with appropriate types.
+6. Do not use any to bypass TypeScript errors.
+7. Do not directly mutate React state.
+8. Keep types and reusable utility functions separate from UI components.
+9. Use localStorage to persist student records.
+10. Do not use a backend or external API for this assignment.
+11. Do not use a UI component framework.
+12. Ensure the project builds without TypeScript errors before submission.
+
+5. BONUS CHALLENGE
+
+[ ] Add a generic reusable DataTable component that accepts different data types.
+[ ] Add sorting by student name and course.
+[ ] Add pagination to the student list.
+[ ] Add a typed custom Hook called useLocalStorage.
+[ ] Add a student details page using React Router.
+[ ] Add a CSV export feature with correctly typed student data.
