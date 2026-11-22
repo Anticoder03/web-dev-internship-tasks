@@ -1,0 +1,108 @@
+React Production Readiness — Environment Variables, Build, Deployment & Performance
+
+PROJECT: Deploy the React Student Management Dashboard
+
+Take the React Student Management Dashboard from the previous assignment and prepare it for production. Improve its performance, configure environment variables, create a production build, and deploy it to a hosting platform. The goal is to understand the complete workflow from development to a live website.
+
+A. ENVIRONMENT VARIABLES
+[ ] Understand why applications use environment variables.
+[ ] Learn how Vite exposes client-side environment variables.
+[ ] Create a `.env` file in the project root.
+[ ] Add a sample application title or public configuration value using a `VITE_` prefixed variable.
+[ ] Access the variable using `import.meta.env`.
+[ ] Create a `.env.example` file documenting required variable names.
+[ ] Add `.env` to `.gitignore` when it contains local or sensitive configuration.
+[ ] Understand that variables prefixed with `VITE_` are exposed to the browser and must never contain secrets.
+
+B. PRODUCTION BUILD
+[ ] Understand the difference between development mode and production mode.
+[ ] Review the scripts inside `package.json`.
+[ ] Run the production build command.
+[ ] Explore the generated `dist` folder.
+[ ] Preview the production build locally.
+[ ] Fix all build errors and important console warnings.
+[ ] Verify that the application works correctly using the production preview.
+
+C. PERFORMANCE OPTIMIZATION
+[ ] Inspect the application for unnecessary component re-renders.
+[ ] Use React DevTools Profiler to inspect component rendering.
+[ ] Identify large or expensive components.
+[ ] Apply `React.memo`, `useMemo`, or `useCallback` only where they provide a measurable benefit.
+[ ] Use `React.lazy()` and `Suspense` to lazy-load at least one page or large component.
+[ ] Optimize images by using appropriately sized and compressed image files.
+[ ] Avoid unnecessary dependencies.
+[ ] Check that search, filters, and navigation remain responsive.
+
+D. DEPLOYMENT PREPARATION
+[ ] Review the project folder structure and remove unused files.
+[ ] Confirm that the application builds successfully.
+[ ] Create a production-ready README file.
+[ ] Add project name, description, features, and technology stack to the README.
+[ ] Add local installation and run instructions.
+[ ] Add a screenshot of the application to the README.
+[ ] Initialize a Git repository if one does not already exist.
+[ ] Commit the final source code.
+[ ] Push the project to a GitHub repository.
+
+E. DEPLOYMENT
+[ ] Choose a free hosting platform such as Vercel or Netlify.
+[ ] Connect the GitHub repository to the selected hosting platform.
+[ ] Configure the build command as `npm run build`.
+[ ] Configure the output directory as `dist`.
+[ ] Add any required public environment variables in the hosting platform settings.
+[ ] Deploy the application.
+[ ] Open the live website and verify that it loads correctly.
+[ ] Test all major features on the deployed website.
+[ ] Verify that refreshing a nested route does not produce a 404 error; configure SPA fallback or rewrites if required.
+[ ] Confirm that the deployed site works on mobile and desktop.
+
+F. FINAL QUALITY CHECK
+[ ] Test adding, editing, and deleting student records.
+[ ] Test search and filters.
+[ ] Test localStorage persistence after refreshing the live website.
+[ ] Check browser console errors.
+[ ] Check that no private keys or secrets are committed to GitHub.
+[ ] Test the website in at least two different browsers if available.
+[ ] Share the live deployment URL and GitHub repository URL.
+
+3. REQUIRED FILE STRUCTURE
+
+react-student-dashboard/
+│
+├── .env.example
+├── .gitignore
+├── README.md
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── src/
+    ├── main.tsx
+    ├── App.tsx
+    ├── components/
+    ├── pages/
+    ├── types/
+    ├── utils/
+    └── styles/
+
+4. RULES
+
+1. Continue using React, TypeScript, and Vite from the previous assignment.
+2. Do not rebuild the project from scratch; improve the existing Student Management Dashboard.
+3. The production build must complete successfully.
+4. Never put private API keys, passwords, or secrets in client-side environment variables.
+5. Do not commit the local `.env` file if it contains local or sensitive configuration.
+6. Use Git and GitHub to manage and publish the source code.
+7. Deploy using a free hosting option.
+8. Test the deployed website, not only the local development version.
+9. Fix route-refresh issues if the hosting platform requires SPA rewrite configuration.
+10. Submit both the live website URL and the GitHub repository URL.
+
+5. BONUS CHALLENGE
+
+[ ] Add a custom domain if one is available.
+[ ] Add a custom 404 page.
+[ ] Run Lighthouse and record the Performance, Accessibility, Best Practices, and SEO scores.
+[ ] Improve accessibility by adding semantic HTML and accessible labels.
+[ ] Add Open Graph metadata and a favicon.
+[ ] Set up automatic deployment when changes are pushed to the main GitHub branch.
