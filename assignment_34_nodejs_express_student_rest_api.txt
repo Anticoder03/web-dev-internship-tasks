@@ -1,0 +1,103 @@
+INTRODUCTION TO NODE.JS & EXPRESS.JS
+Project: Student Management REST API
+
+1. OBJECTIVE
+
+Build your first backend application using Node.js and Express.js. Create a REST API for managing student records and test every endpoint using Postman.
+
+2. TASK REQUIREMENTS
+
+A. PROJECT SETUP
+[ ] Create a new backend project folder named student-management-api.
+[ ] Initialize the project using npm.
+[ ] Install Express.js and any required development dependency.
+[ ] Create a clear and organized project structure.
+[ ] Add a start script and a development script in package.json.
+[ ] Create a .gitignore file and exclude node_modules and environment files.
+
+B. NODE.JS FUNDAMENTALS
+[ ] Create and run a basic Node.js application.
+[ ] Understand the purpose of package.json and npm.
+[ ] Practice importing and exporting modules.
+[ ] Use the built-in file system or path module in a small separate example.
+[ ] Understand the difference between CommonJS and ES Modules.
+
+C. EXPRESS SERVER
+[ ] Create an Express server in server.js or app.js.
+[ ] Configure the server to run on a suitable local port.
+[ ] Add express.json() middleware to read JSON request bodies.
+[ ] Create a GET route at /api/health that returns the server status.
+[ ] Create a root route that returns a simple API welcome message.
+[ ] Handle unknown routes with a suitable 404 JSON response.
+
+D. STUDENT REST API
+[ ] Create an in-memory array containing at least five sample student records.
+[ ] Each student must have an id, name, email, course, and enrollmentYear.
+[ ] Create GET /api/students to return all students.
+[ ] Create GET /api/students/:id to return one student by ID.
+[ ] Create POST /api/students to add a new student.
+[ ] Create PUT /api/students/:id to update an existing student.
+[ ] Create DELETE /api/students/:id to remove a student.
+[ ] Return appropriate HTTP status codes and clear JSON messages.
+[ ] Validate required fields before creating or updating a student.
+[ ] Return a 404 response when a requested student does not exist.
+
+E. MIDDLEWARE & ERROR HANDLING
+[ ] Create a custom request-logging middleware that logs the HTTP method and URL.
+[ ] Apply the middleware to your API routes.
+[ ] Use try/catch where appropriate and return consistent error responses.
+[ ] Keep route handlers readable and avoid repeating response logic unnecessarily.
+
+F. API TESTING WITH POSTMAN
+[ ] Test the health-check endpoint.
+[ ] Test retrieving all students.
+[ ] Test retrieving a student using its ID.
+[ ] Test creating a student with valid data.
+[ ] Test creating a student with missing or invalid data.
+[ ] Test updating an existing student.
+[ ] Test deleting an existing student.
+[ ] Test requests using an ID that does not exist.
+[ ] Save all requests in a Postman collection named Student Management API.
+
+3. REQUIRED FILE STRUCTURE
+
+student-management-api/
+│
+├── src/
+│   ├── data/
+│   │   └── students.js
+│   ├── middleware/
+│   │   └── logger.js
+│   ├── routes/
+│   │   └── studentRoutes.js
+│   ├── controllers/
+│   │   └── studentController.js
+│   └── app.js
+│
+├── server.js
+├── package.json
+├── package-lock.json
+├── .gitignore
+└── README.md
+
+You may adjust the structure if you have a clear reason, but keep routes, controllers, data, and middleware organized.
+
+4. RULES
+
+1. Use Node.js and Express.js for the backend.
+2. Do not use MongoDB or any other database for this task; store records in an in-memory array.
+3. Use REST conventions and the correct HTTP methods.
+4. Return JSON responses from all API endpoints.
+5. Do not place the entire application in one file.
+6. Use meaningful variable, function, and file names.
+7. Do not expose unnecessary error details to API clients.
+8. Add setup and run instructions to README.md.
+9. Verify every endpoint in Postman before submitting.
+10. Push the completed project to GitHub and include the repository link in your submission.
+
+5. BONUS CHALLENGE
+
+[ ] Add a search endpoint that filters students by name or course.
+[ ] Add a route that returns the total number of students.
+[ ] Move the server port into an environment variable using dotenv.
+[ ] Create a reusable response format for successful and failed API requests.
