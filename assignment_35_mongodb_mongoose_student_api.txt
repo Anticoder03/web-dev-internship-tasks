@@ -1,0 +1,115 @@
+DAY 35 — MONGODB & MONGOOSE FUNDAMENTALS
+Project: Student Management REST API — Database Integration
+
+1. OBJECTIVE
+
+Connect the Student Management REST API created on Day 34 to MongoDB. Use Mongoose to define a Student model and store student records permanently in a database instead of an in-memory array.
+
+2. TASK REQUIREMENTS
+
+A. MONGODB SETUP
+[ ] Create a MongoDB Atlas account or use a local MongoDB installation.
+[ ] Create a database named student_management.
+[ ] Create a database user and configure network access if using MongoDB Atlas.
+[ ] Obtain the MongoDB connection string.
+[ ] Create a .env file to store the database connection string.
+[ ] Add .env and node_modules to .gitignore.
+[ ] Install mongoose and dotenv in the backend project.
+
+B. DATABASE CONNECTION
+[ ] Create a separate database configuration file.
+[ ] Connect the Express application to MongoDB using Mongoose.
+[ ] Read the connection string from the environment variable.
+[ ] Log a success message after a successful database connection.
+[ ] Handle connection failures without silently ignoring them.
+[ ] Start accepting API requests only after the database connection succeeds.
+
+C. STUDENT MODEL & SCHEMA
+[ ] Create a Student model using Mongoose.
+[ ] Define the following fields: name, email, course, enrollmentYear.
+[ ] Make name, email, and course required.
+[ ] Set email as unique.
+[ ] Set appropriate data types for every field.
+[ ] Add basic validation for email and enrollmentYear.
+[ ] Add createdAt and updatedAt timestamps using the Mongoose schema option.
+[ ] Export the Student model for use in controllers.
+
+D. DATABASE CRUD OPERATIONS
+[ ] Replace the in-memory student array with MongoDB operations.
+[ ] Update GET /api/students to retrieve all students from MongoDB.
+[ ] Update GET /api/students/:id to retrieve a student by MongoDB ObjectId.
+[ ] Update POST /api/students to create a student document.
+[ ] Update PUT /api/students/:id to update an existing student.
+[ ] Update DELETE /api/students/:id to delete a student.
+[ ] Use appropriate Mongoose methods such as find(), findById(), create(), findByIdAndUpdate(), and findByIdAndDelete().
+[ ] Return clear JSON responses after every operation.
+[ ] Handle invalid MongoDB ObjectIds.
+[ ] Handle duplicate email errors.
+[ ] Return a 404 response when a student record does not exist.
+
+E. API TESTING WITH POSTMAN
+[ ] Test retrieving students when the database is empty.
+[ ] Create at least five student records through the API.
+[ ] Verify that the records are stored in MongoDB.
+[ ] Retrieve all students and retrieve one student by ID.
+[ ] Update a student's details and verify the change.
+[ ] Delete a student and verify that it is removed.
+[ ] Test duplicate email validation.
+[ ] Test missing required fields.
+[ ] Test invalid ObjectId and non-existing student ID.
+[ ] Save or update all requests in the existing Student Management API Postman collection.
+
+F. PROJECT DOCUMENTATION
+[ ] Update README.md with MongoDB setup instructions.
+[ ] Explain how to configure the environment variables.
+[ ] Include the API endpoints and example request bodies.
+[ ] Never upload the actual .env file or database credentials to GitHub.
+[ ] Push the updated project to GitHub.
+
+3. REQUIRED FILE STRUCTURE
+
+student-management-api/
+│
+├── src/
+│   ├── config/
+│   │   └── db.js
+│   ├── models/
+│   │   └── Student.js
+│   ├── controllers/
+│   │   └── studentController.js
+│   ├── routes/
+│   │   └── studentRoutes.js
+│   ├── middleware/
+│   │   └── logger.js
+│   └── app.js
+│
+├── server.js
+├── .env
+├── .env.example
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── README.md
+
+You may adjust the structure if you have a clear reason, but keep database configuration, models, routes, controllers, and middleware organized.
+
+4. RULES
+
+1. Continue using the Day 34 Student Management REST API project.
+2. Use MongoDB with Mongoose for database operations.
+3. Do not store student records in an in-memory array.
+4. Keep database credentials and secrets inside environment variables.
+5. Never commit the real .env file to GitHub.
+6. Use async/await for asynchronous database operations.
+7. Validate incoming data and handle database errors properly.
+8. Use appropriate HTTP status codes for success and failure responses.
+9. Keep routes and controllers separate.
+10. Test all endpoints using Postman before submission.
+
+5. BONUS CHALLENGE
+
+[ ] Add pagination to GET /api/students using page and limit query parameters.
+[ ] Add search by student name or course.
+[ ] Add sorting by name or enrollmentYear.
+[ ] Add a GET /api/students/count endpoint to return the total number of students.
+[ ] Add a PATCH endpoint to update only selected student fields.
