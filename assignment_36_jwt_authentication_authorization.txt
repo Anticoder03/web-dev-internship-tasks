@@ -1,0 +1,135 @@
+DAY 36 — AUTHENTICATION & AUTHORIZATION WITH JWT
+Project: Student Management REST API — User Authentication
+
+1. OBJECTIVE
+
+Add secure user registration, login, and authorization to the Student Management REST API. Use bcrypt to hash passwords and JSON Web Tokens (JWT) to protect private API routes.
+
+2. TASK REQUIREMENTS
+
+A. USER MODEL
+[ ] Create a User model using Mongoose.
+[ ] Add name, email, and password fields.
+[ ] Make all required fields mandatory.
+[ ] Set email as unique and validate its format.
+[ ] Store only hashed passwords; never store plain-text passwords.
+[ ] Add createdAt and updatedAt timestamps.
+[ ] Keep the User model separate from the Student model.
+
+B. USER REGISTRATION
+[ ] Install bcryptjs and jsonwebtoken.
+[ ] Create POST /api/auth/register.
+[ ] Accept name, email, and password in the request body.
+[ ] Validate that all required fields are provided.
+[ ] Check whether the email is already registered.
+[ ] Hash the password using bcrypt before saving the user.
+[ ] Save the new user in MongoDB.
+[ ] Return a suitable success status and message.
+[ ] Never include the password or password hash in the response.
+
+C. USER LOGIN
+[ ] Create POST /api/auth/login.
+[ ] Accept email and password.
+[ ] Find the user by email.
+[ ] Compare the submitted password with the stored hash using bcrypt.
+[ ] Return a clear error for invalid credentials.
+[ ] Generate a JWT after successful authentication.
+[ ] Return the token and safe user details in the response.
+[ ] Set a suitable token expiration time.
+
+D. JWT AUTHENTICATION MIDDLEWARE
+[ ] Create a separate authentication middleware.
+[ ] Read the token from the Authorization request header.
+[ ] Use the Bearer token format.
+[ ] Verify the token using jsonwebtoken.
+[ ] Read the JWT secret from an environment variable.
+[ ] Attach the authenticated user's ID to the request.
+[ ] Return HTTP 401 when the token is missing, invalid, or expired.
+[ ] Do not trust user IDs supplied by the client as proof of identity.
+
+E. PROTECT STUDENT API ROUTES
+[ ] Protect student creation with authentication.
+[ ] Protect student update and delete operations.
+[ ] Decide whether listing and viewing student records should also require authentication, and document your decision.
+[ ] Create GET /api/auth/me to return the currently authenticated user's safe profile.
+[ ] Verify that protected routes reject requests without a valid token.
+[ ] Ensure users cannot access or modify data by pretending to be another user.
+
+F. AUTHORIZATION & SECURITY
+[ ] Add a role field to the User model with allowed values such as user and admin.
+[ ] Set the default role to user.
+[ ] Create an admin-only middleware.
+[ ] Create GET /api/admin/users to list registered users safely.
+[ ] Restrict the admin endpoint to users with the admin role.
+[ ] Never allow users to assign themselves the admin role through public registration.
+[ ] Keep JWT secrets and database credentials in .env.
+[ ] Add .env to .gitignore and provide a safe .env.example file.
+[ ] Return consistent JSON error responses.
+
+G. API TESTING WITH POSTMAN
+[ ] Register a new user.
+[ ] Try registering again with the same email.
+[ ] Log in with valid credentials.
+[ ] Try logging in with an incorrect password.
+[ ] Copy the returned JWT and use it as a Bearer token.
+[ ] Access a protected route with a valid token.
+[ ] Access a protected route without a token.
+[ ] Test an invalid and expired token.
+[ ] Test the admin endpoint using a normal user account.
+[ ] Test the admin endpoint using an admin account.
+[ ] Save all authentication requests in a Postman collection.
+
+3. REQUIRED FILE STRUCTURE
+
+student-management-api/
+│
+├── src/
+│   ├── config/
+│   │   └── db.js
+│   ├── models/
+│   │   ├── Student.js
+│   │   └── User.js
+│   ├── controllers/
+│   │   ├── studentController.js
+│   │   └── authController.js
+│   ├── routes/
+│   │   ├── studentRoutes.js
+│   │   ├── authRoutes.js
+│   │   └── adminRoutes.js
+│   ├── middleware/
+│   │   ├── logger.js
+│   │   ├── authMiddleware.js
+│   │   └── adminMiddleware.js
+│   └── app.js
+│
+├── server.js
+├── .env
+├── .env.example
+├── .gitignore
+├── package.json
+└── README.md
+
+You may adjust the structure if you have a clear reason, but keep models, routes, controllers, configuration, and middleware organized.
+
+4. RULES
+
+1. Continue using the Day 35 Student Management API project.
+2. Use MongoDB and Mongoose for storing user accounts.
+3. Hash passwords with bcrypt before saving them.
+4. Never store or return plain-text passwords or password hashes.
+5. Use JWT for authentication and verify tokens on the server.
+6. Store JWT_SECRET and database credentials in environment variables.
+7. Never commit the real .env file to GitHub.
+8. Never expose the JWT secret in API responses or frontend code.
+9. Do not allow public registration to set privileged roles.
+10. Use appropriate HTTP status codes, including 400, 401, 403, and 409 where applicable.
+11. Test successful and unsuccessful authentication scenarios using Postman.
+12. Update README.md with registration, login, and protected-route instructions.
+
+5. BONUS CHALLENGE
+
+[ ] Add a change-password endpoint that verifies the current password first.
+[ ] Add a profile-update endpoint for the authenticated user.
+[ ] Add a logout endpoint and explain the limitations of stateless JWT logout.
+[ ] Add refresh-token handling as a separate enhancement, with secure storage and expiration.
+[ ] Add rate limiting to registration and login endpoints.
