@@ -1,0 +1,107 @@
+ADVANCED REST API DEVELOPMENT
+Project: Student Management REST API — Search, Filtering, Pagination & API Documentation
+
+1. OBJECTIVE
+
+Improve the Student Management REST API by adding advanced data retrieval features. Implement search, filtering, sorting, pagination, centralized error handling, and API documentation. Ensure the existing JWT authentication continues to work correctly.
+
+2. TASK REQUIREMENTS
+
+A. SEARCH FUNCTIONALITY
+[ ] Add a search feature to GET /api/students.
+[ ] Allow searching students by name.
+[ ] Allow searching students by email.
+[ ] Allow searching students by course.
+[ ] Accept the search keyword through a query parameter named search.
+[ ] Make text search case-insensitive.
+[ ] Return an empty result with a successful response when no records match.
+[ ] Test search using partial and complete values.
+
+B. FILTERING
+[ ] Add filtering by course.
+[ ] Add filtering by enrollmentYear.
+[ ] Allow multiple filters to be used together.
+[ ] Validate filter values before querying MongoDB.
+[ ] Ensure filters work correctly with search.
+[ ] Test requests with valid and invalid filter values.
+
+C. SORTING
+[ ] Add sorting by name, email, course, and enrollmentYear.
+[ ] Accept sortBy and order query parameters.
+[ ] Support ascending and descending order.
+[ ] Use MongoDB/Mongoose sorting rather than sorting all records in application memory.
+[ ] Apply a safe default sort order when no sorting parameters are provided.
+[ ] Reject or safely handle unsupported sort fields.
+
+D. PAGINATION
+[ ] Add page and limit query parameters to GET /api/students.
+[ ] Set a default page number and page size.
+[ ] Validate that page and limit are positive integers.
+[ ] Use Mongoose skip() and limit() for pagination.
+[ ] Calculate the total number of matching records.
+[ ] Return pagination metadata, including currentPage, totalPages, totalRecords, and pageSize.
+[ ] Handle requests for pages beyond the available records.
+[ ] Ensure search, filters, and sorting work together with pagination.
+
+E. CENTRALIZED ERROR HANDLING
+[ ] Create a centralized error-handling middleware.
+[ ] Create a custom not-found middleware for unknown routes.
+[ ] Forward errors from asynchronous controllers to the error handler.
+[ ] Return consistent JSON error responses.
+[ ] Avoid exposing stack traces or sensitive internal details in production responses.
+[ ] Use appropriate HTTP status codes for validation, authentication, authorization, and server errors.
+
+F. API DOCUMENTATION WITH SWAGGER
+[ ] Install and configure swagger-ui-express and swagger-jsdoc.
+[ ] Add OpenAPI documentation for the Student API endpoints.
+[ ] Document request parameters, request bodies, response formats, and status codes.
+[ ] Document the authentication requirement for protected endpoints.
+[ ] Configure Bearer JWT authentication in the API documentation.
+[ ] Create a documentation route such as /api-docs.
+[ ] Open the Swagger UI page and test the documented endpoints.
+[ ] Keep the documentation updated when API routes change.
+
+G. AUTHENTICATION & REGRESSION TESTING
+[ ] Verify that protected student routes still require a valid JWT.
+[ ] Verify that normal users cannot access admin-only routes.
+[ ] Test search, filtering, sorting, and pagination with valid tokens.
+[ ] Test requests without tokens and with invalid tokens.
+[ ] Test invalid query parameters and empty search results.
+[ ] Save the updated requests in the existing Postman collection.
+[ ] Confirm that existing registration, login, and student CRUD operations still work.
+
+3. REQUIRED FILE STRUCTURE
+
+student-management-api/
+│
+├── src/
+│   ├── config/
+│   │   └── db.js
+│   ├── models/
+│   │   ├── Student.js
+│   │   └── User.js
+│   ├── controllers/
+│   │   ├── studentController.js
+│   │   └── authController.js
+│   ├── routes/
+│   │   ├── studentRoutes.js
+│   │   ├── authRoutes.js
+│   │   └── adminRoutes.js
+│   ├── middleware/
+│   │   ├── logger.js
+│   │   ├── authMiddleware.js
+│   │   ├── adminMiddleware.js
+│   │   ├── notFoundMiddleware.js
+│   │   └── errorMiddleware.js
+│   ├── docs/
+│   │   └── swagger.js
+│   └── app.js
+│
+├── server.js
+├── .env
+├── .env.example
+├── .gitignore
+├── package.json
+└── README.md
+
+You may adjust the structure if you have a clear reason, but keep routes, controllers, middleware, documentation, and configuration organized.
